@@ -11,6 +11,16 @@ import { InfoComponent } from './info/info.component';
 import { SpeakersComponent } from './speakers/speakers.component';
 import { SpeakerDetailComponent } from './speaker-detail/speaker-detail.component';
 import { ProgramComponent } from './program/program.component';
+import { FunfactsComponent } from './funfacts/funfacts.component';
+import { DownloadComponent } from './download/download.component';
+import { VenueComponent } from './venue/venue.component';
+import { RegisterComponent } from './register/register.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { TestimonialComponent } from './testimonial/testimonial.component';
+import { SponsorsComponent } from './sponsors/sponsors.component';
+import { FooterComponent } from './footer/footer.component';
+import { SubfooterComponent } from './subfooter/subfooter.component';
+import { SalvattoreDirective } from './salvattore.directive';
 
 const rotas: Routes = [
   {
@@ -30,7 +40,17 @@ const rotas: Routes = [
     InfoComponent,
     SpeakersComponent,
     SpeakerDetailComponent,
-    ProgramComponent
+    ProgramComponent,
+    FunfactsComponent,
+    DownloadComponent,
+    VenueComponent,
+    RegisterComponent,
+    GalleryComponent,
+    TestimonialComponent,
+    SponsorsComponent,
+    FooterComponent,
+    SubfooterComponent,
+    SalvattoreDirective
   ],
   imports: [
     RouterModule.forChild(
