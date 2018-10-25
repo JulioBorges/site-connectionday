@@ -1,0 +1,11 @@
+{
+    "enableAbout": true,
+    "enableSpeakers": true,
+    "enableProgram": true,
+    "enableVenue": true,
+    "enableRegister": true,
+    "enableGallery": true,
+    "enableSponsors": true,
+    "enableFooter": true,
+    "urlCodeConduct": "http"
+}

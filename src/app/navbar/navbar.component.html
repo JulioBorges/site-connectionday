@@ -3,7 +3,7 @@
 
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
-        <span class="sr-only">Toggle navigation</span>
+        <span class="sr-only">Mudar navegação</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -13,14 +13,15 @@
 
     <div class="collapse navbar-collapse" id="nav">
       <ul class="nav navbar-nav navbar-right uppercase">
-        <li><a data-toggle="elementscroll" href="#info">About</a></li>
-        <li><a data-toggle="elementscroll" href="#speakers">Speakers</a></li>
-        <li><a data-toggle="elementscroll" href="#program">Program</a></li>
-        <li><a data-toggle="elementscroll" href="#venue">Venue</a></li>
-        <li><a data-toggle="elementscroll" href="#register">Register</a></li>
-        <li><a data-toggle="elementscroll" href="#gallery">Gallery</a></li>
-        <li><a data-toggle="elementscroll" href="#sponsors">Sponsors</a></li>
-        <li><a data-toggle="elementscroll" href="#footer">Contact</a></li>
+        <li *ngIf="this.vm.enableAbout"><a data-toggle="elementscroll" href="#info">Sobre</a></li>
+        <li *ngIf="this.vm.enableSpeakers"><a data-toggle="elementscroll" href="#speakers">Palestrantes</a></li>
+        <li><a data-toggle="elementscroll" href="#program">Programação</a></li>
+        <li><a data-toggle="elementscroll" href="#venue">Local</a></li>
+        <li><a data-toggle="elementscroll" href="#register">Ingressos</a></li>
+        <li><a data-toggle="elementscroll" href="#gallery">Galeria</a></li>
+        <li><a data-toggle="elementscroll" href="#sponsors">Patrocínio</a></li>
+        <li><a data-toggle="elementscroll" href="#footer">Contato</a></li>
+        <li><a data-toggle="elementscroll" href="http://pt-br.confcodeofconduct.com/">Código de conduta</a></li>
       </ul>
     </div>
 
