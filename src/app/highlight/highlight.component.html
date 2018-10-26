@@ -2,12 +2,10 @@
   <div class="container-fluid">
     <div class="row">
 
-      <div id="left" class="left col-lg-9 col-md-8 text-right">
-        <h2>Join the conference</h2>
-        <p>Lorem ipsum dolor sit amet
+      <div ng-bind-html="this.vm.htmlHighlight">
       </div>
 
-      <div id="right" class="col-lg-3 col-md-4 text-left">
+      <div id="right" class="col-lg-3 col-md-4 text-left" *ngIf="this.vm.showCountDown">
         <div id="countdown"></div>
       </div>
 

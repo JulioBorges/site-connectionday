@@ -13,7 +13,5 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
     this.vm = PageConfig.default
-    console.log(this.vm)
   }
-
 }

@@ -1,11 +1,22 @@
 {
     "enableAbout": true,
-    "enableSpeakers": true,
-    "enableProgram": true,
-    "enableVenue": true,
-    "enableRegister": true,
+    "enableSpeakers": false,
+    "enableProgram": false,
+    "enableVenue": false,
+    "enableRegister": false,
     "enableGallery": true,
     "enableSponsors": true,
     "enableFooter": true,
-    "urlCodeConduct": "http"
+    "urlCodeConduct": "http://pt-br.confcodeofconduct.com/",
+    "titleSections": {
+        "info": "Sobre",
+        "speakers": "Palestras",
+        "program": "Programação",
+        "venue": "Local",
+        "register": "Ingressos",
+        "gallery": "2018",
+        "sponsors": "Patrocínio",
+        "footer": "Contato",
+        "conductCode": "Código de conduta"
+    }
 }

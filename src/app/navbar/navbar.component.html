@@ -13,15 +13,15 @@
 
     <div class="collapse navbar-collapse" id="nav">
       <ul class="nav navbar-nav navbar-right uppercase">
-        <li *ngIf="this.vm.enableAbout"><a data-toggle="elementscroll" href="#info">Sobre</a></li>
-        <li *ngIf="this.vm.enableSpeakers"><a data-toggle="elementscroll" href="#speakers">Palestrantes</a></li>
-        <li><a data-toggle="elementscroll" href="#program">Programação</a></li>
-        <li><a data-toggle="elementscroll" href="#venue">Local</a></li>
-        <li><a data-toggle="elementscroll" href="#register">Ingressos</a></li>
-        <li><a data-toggle="elementscroll" href="#gallery">Galeria</a></li>
-        <li><a data-toggle="elementscroll" href="#sponsors">Patrocínio</a></li>
-        <li><a data-toggle="elementscroll" href="#footer">Contato</a></li>
-        <li><a data-toggle="elementscroll" href="http://pt-br.confcodeofconduct.com/">Código de conduta</a></li>
+        <li *ngIf="this.vm.enableAbout"><a data-toggle="elementscroll" href="#info">{{this.vm.titleSections.info}}</a></li>
+        <li *ngIf="this.vm.enableSpeakers"><a data-toggle="elementscroll" href="#speakers">{{this.vm.titleSections.speakers}}</a></li>
+        <li *ngIf="this.vm.enableProgram"><a data-toggle="elementscroll" href="#program">{{this.vm.titleSections.program}}</a></li>
+        <li *ngIf="this.vm.enableVenue"><a data-toggle="elementscroll" href="#venue">{{this.vm.titleSections.venue}}</a></li>
+        <li *ngIf="this.vm.enableRegister"><a data-toggle="elementscroll" href="#register">{{this.vm.titleSections.register}}</a></li>
+        <li *ngIf="this.vm.enableGallery"><a data-toggle="elementscroll" href="#gallery">{{this.vm.titleSections.gallery}}</a></li>
+        <li *ngIf="this.vm.enableSponsors"><a data-toggle="elementscroll" href="#sponsors">{{this.vm.titleSections.sponsors}}</a></li>
+        <li *ngIf="this.vm.enableFooter"><a data-toggle="elementscroll" href="#footer">{{this.vm.titleSections.footer}}</a></li>
+        <li><a data-toggle="elementscroll" href={{this.vm.urlCodeConduct}}>{{this.vm.titleSections.conductCode}}</a></li>
       </ul>
     </div>
 
