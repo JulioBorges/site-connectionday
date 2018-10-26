@@ -1,0 +1,27 @@
+{
+    "slides": [
+        {
+            "mainImage": "assets/img/slide1.jpg",
+            "title": "Connection Day",
+            "subTitle": "O maior evento de tecnologia do centro-oeste mineiro."
+        },
+        {
+            "mainImage": "assets/img/slide2.jpg",
+            "title": "PALESTRAS",
+            "subTitle": ""
+        },
+        {
+            "mainImage": "assets/img/slide3.jpg",
+            "title": "CONHECIMENTO",
+            "subTitle": ""
+        },
+        {
+            "mainImage": "assets/img/slide4.jpg",
+            "title": "NETWORKING",
+            "subTitle": ""
+        }
+    ],
+    "highlight": "<h2>Em 2019 tem mais...</h2>",
+    "showCountDown": false,
+    "htmlHighlight": "<div id='left' [ngClass]='{`left col-lg-9 col-md-8 text-right` : !this.vm.showCountDown, `left col-lg-12 col-md-12 text-right` : this.vm.showCountDown}'><h2>Join the conference</h2><p>Lorem ipsum dolor sit amet</p></div>"
+}
