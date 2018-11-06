@@ -5,7 +5,7 @@
 <app-info *ngIf="this.vm.enableAbout"></app-info>
 <app-speakers *ngIf="this.vm.enableSpeakers"></app-speakers>
 <app-program *ngIf="this.vm.enableProgram"></app-program>
-<app-download></app-download>
+<app-download *ngIf="this.vm.enableDownload"></app-download>
 <app-venue *ngIf="this.vm.enableVenue"></app-venue>
 <app-funfacts></app-funfacts>
 <app-register *ngIf="this.vm.enableRegister"></app-register>
@@ -13,4 +13,3 @@
 <app-testimonial></app-testimonial>
 <app-sponsors *ngIf="this.vm.enableSponsors"></app-sponsors>
 <app-footer *ngIf="this.vm.enableFooter"></app-footer>
-<app-subfooter></app-subfooter>

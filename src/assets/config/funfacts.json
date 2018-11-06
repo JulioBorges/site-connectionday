@@ -1,0 +1,25 @@
+{
+    "title": "Em 2018 foi assim:",
+    "facts": [
+        {
+            "class": "pe pe-4x pe-7s-world",
+            "number": 80,
+            "description": "Participantes inscritos"
+        },
+        {
+            "class": "pe pe-4x pe-7s-micro",
+            "number": 5,
+            "description": "Palestrantes"
+        },
+        {
+            "class": "pe pe-4x pe-7s-display2",
+            "number": 1,
+            "description": "Workshop sobre impressão 3D"
+        },
+        {
+            "class": "pe pe-va pe-4x pe-7s-id",
+            "number": 10,
+            "description": "Voluntários na organização do evento"
+        }
+    ]
+}

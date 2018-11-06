@@ -2,33 +2,35 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <h2 class="uppercase">sponsors</h2>
-        <p class="lead">Duis ut quam sed ex consectetur euismod. Aliquam et condimentum eros.</p>
+        <h2 class="uppercase">{{this.vm.title}}</h2>
+        <p class="lead">{{this.vm.subtitle}}</p>
 
-        <div id="sponsors-carousel">
-
+        <div class="sponsors-carousel" *ngIf="this.vm.diamond.length > 0">
           <div class="sponsor">
             <img class="img-responsive" src="assets/img/sponsor1.png" alt="">
           </div>
-
-          <div class="sponsor">
-            <img class="img-responsive" src="assets/img/sponsor2.png" alt="">
-          </div>
-
-          <div class="sponsor">
-            <img class="img-responsive" src="assets/img/sponsor3.png" alt="">
-          </div>
-
-          <div class="sponsor">
-            <img class="img-responsive" src="assets/img/sponsor4.png" alt="">
-          </div>
-
-          <div class="sponsor">
-            <img class="img-responsive" src="assets/img/sponsor5.png" alt="">
-          </div>
-
+          <br>
         </div>
 
+        <div class="sponsors-carousel" *ngIf="this.vm.gold.length > 0">
+          <div class="sponsor">
+            <img class="img-responsive" src="assets/img/sponsor1.png" alt="">
+          </div>
+          <br>
+        </div>
+
+        <div class="sponsors-carousel" *ngIf="this.vm.silver.length > 0">
+          <div class="sponsor">
+            <img class="img-responsive" src="assets/img/sponsor1.png" alt="">
+          </div>
+          <br>
+        </div>
+
+        <div class="sponsors-carousel" *ngIf="this.vm.bronze.length > 0">
+          <div class="sponsor">
+            <img class="img-responsive" src="assets/img/sponsor1.png" alt="">
+          </div>
+        </div>
       </div>
     </div>
   </div>

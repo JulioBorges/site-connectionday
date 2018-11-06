@@ -129,6 +129,15 @@ jQuery(document).ready(function ($) {
 
 	});
 
+	$('.popup-youtube').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+        fixedContentPos: false
+    });
+
 	//LOAD MORE
 	$('#list-speaker li:lt(4)').show();
 
@@ -202,7 +211,7 @@ jQuery(document).ready(function ($) {
 	});
 
 	//OWLCAROUSEL SPONSORS CAROUSEL
-	var owl = $("#sponsors-carousel");
+	var owl = $(".sponsors-carousel");
 
 	owl.owlCarousel({
 

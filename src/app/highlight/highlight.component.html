@@ -2,10 +2,12 @@
   <div class="container-fluid">
     <div class="row">
 
-      <div ng-bind-html="this.vm.htmlHighlight">
+      <div id="left" class="left col-lg-9 col-md-8 text-right">
+        <h2>{{this.vm.highlight.title}}</h2>
+        <p>{{this.vm.highlight.subTitle}}</p>
       </div>
 
-      <div id="right" class="col-lg-3 col-md-4 text-left" *ngIf="this.vm.showCountDown">
+      <div id="right" class="col-lg-3 col-md-4 text-left">
         <div id="countdown"></div>
       </div>
 

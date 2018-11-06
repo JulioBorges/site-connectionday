@@ -1,0 +1,34 @@
+{
+    "team": [
+        {
+            "name": "Julio Borges",
+            "img": "julio.jpg",
+            "profile": "Graduado em Sistemas de informação, é um amante de tecnologia e atua como desenvolvedor Full Stack."
+        },
+        {
+            "name": "Letícia Marielle",
+            "img": "leticia.jpg",
+            "profile": "Graduada em Sistemas de informação, atua como analista de sistemas, é apaixonada pela tecnologia e inovação."
+        },
+        {
+            "name": "Edmar Silva",
+            "img": "edmar.jpg",
+            "profile": "Graduado em Administração de Empresas pela Faculdade Metropolitana de Belo Horizonte, é pós graduando em Governança em Tecnologia da Informação pela UNICSUL. Atua como Coordenador de infraestrutura de TI."
+        },
+        {
+            "name": "Gabriela Moreira",
+            "img": "gabriela.jpg",
+            "profile": "Graduada em Sistemas de informação e especialista de Gestão de Projetos. Atua como gerente da equipe de consultoria técnica e implantação de sistemas na Inovação Computação Móvel."
+        },
+        {
+            "name": "Sóstenes Gonçalves",
+            "img": "sostenes.jpg",
+            "profile": "Graduando em Engenharia da Computação pela UEMG. Entusiasta em tecnologia, e atua como analista de sistemas."
+        },
+        {
+            "name": "Flávio Roberto",
+            "img": "flavio.jpg",
+            "profile": "Graduando em Engenharia da Computação pela UEMG. Entusiasta em tecnologia, e atua como analista de sistemas."
+        }
+    ]
+}
