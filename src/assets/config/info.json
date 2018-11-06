@@ -1,0 +1,21 @@
+{
+    "title": "#ConnectionDay",
+    "text": "O Connection Day é um evento <strong>sem fins lucrativos</strong> que busca conectar profissionais que atuam na área de TI e amantes de tecnologia. </br> Temas atuais, palestras envolventes, networking e muito mais, gerando conhecimento e fortalecendo     a comunidade de TI da nossa região. Em 2018 o evento foi um sucesso contando com aproximadamente 80 pessoas. </br>Para 2019 muitas outras novidades nos esperam.",
+    "items": [
+        {
+            "class": "pe-4x pe-7s-refresh-2",
+            "title": "Palestras atuais",
+            "text": "Novos temas, palestras envolventes e conteúdo super atual."
+        },
+        {
+            "class": "pe-4x pe-7s-micro",
+            "title": "Conhecimento",
+            "text": "Muito conhecimento a ser disseminado por meio de workshops, mesas de idéia, etc..."
+        },
+        {
+            "class": "pe-4x pe-7s-users",
+            "title": "Participação da comunidade",
+            "text": "Convidamos toda a comunidade de TI para participar, sugerindo temas e atividades para serem apresentadas no evento."
+        }
+    ]
+}

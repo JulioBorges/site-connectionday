@@ -21,7 +21,8 @@
             "subTitle": ""
         }
     ],
-    "highlight": "<h2>Em 2019 tem mais...</h2>",
-    "showCountDown": false,
-    "htmlHighlight": "<div id='left' [ngClass]='{`left col-lg-9 col-md-8 text-right` : !this.vm.showCountDown, `left col-lg-12 col-md-12 text-right` : this.vm.showCountDown}'><h2>Join the conference</h2><p>Lorem ipsum dolor sit amet</p></div>"
+    "highlight": {
+        "title": "Prepare se para 2019...",
+        "subTitle": "Muitas surpresas para o dia 04/05/2019"
+    }
 }

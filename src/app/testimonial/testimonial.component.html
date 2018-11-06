@@ -1,34 +1,15 @@
-<section id="testimonial" data-component="testimonial">
+<section id="testimonial">
   <div class="container-fluid">
     <div class="row">
-
       <div class="col-lg-6 col-lg-offset-6 col-md-6 col-md-offset-6 no-padding">
         <div class="testimonial-inner">
           <h2 class="hidden">testimonial</h2>
 
           <div id="testimonial-carousel">
-            <div class="item">
-              <img class="img-circle" src="assets/img/testimonial1.png" alt="">
-              <p class="lead">Nulla euismod sit amet ligula in vehicula. Vestibulum cursus ex non
-                ante dignissim ultricies.Sed egestas hendrerit neque tincidunt mattis. Duis euismod
-                porta tempus.</p>
-              <p class="name">Todd Stone</p>
-            </div>
-
-            <div class="item">
-              <img class="img-circle" src="assets/img/testimonial2.png" alt="">
-              <p class="lead">Nulla euismod sit amet ligula in vehicula. Vestibulum cursus ex non
-                ante dignissim ultricies. Sed egestas hendrerit neque tincidunt mattis. Duis
-                euismod porta tempus.</p>
-              <p class="name">Minnie Pierce</p>
-            </div>
-
-            <div class="item">
-              <img class="img-circle" src="assets/img/testimonial3.png" alt="">
-              <p class="lead">Nulla euismod sit amet ligula in vehicula. Vestibulum cursus ex non
-                ante dignissim ultricies. Sed egestas hendrerit neque tincidunt mattis. Duis
-                euismod porta tempus.</p>
-              <p class="name">Lena Kim</p>
+            <div class="item" *ngFor="let member of this.vm.team; let i = index">
+              <img class="img-circle" src="assets/img/{{member.img}}" alt="">
+              <p class="lead">{{member.profile}}</p>
+              <p class="name">{{member.name}}</p>
             </div>
           </div>
         </div>

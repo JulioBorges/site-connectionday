@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as Testimonial from '../../assets/config/testimonial.json'
 
 @Component({
   selector: 'app-testimonial',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./testimonial.component.css']
 })
 export class TestimonialComponent implements OnInit {
+  protected vm: any;
 
   constructor() { }
 
   ngOnInit() {
+    this.vm = Testimonial.default;
   }
 
 }
