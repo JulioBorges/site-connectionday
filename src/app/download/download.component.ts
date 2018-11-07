@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as PageConf from '../../assets/config/call4papers.json';
 
 @Component({
   selector: 'app-download',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./download.component.css']
 })
 export class DownloadComponent implements OnInit {
-
+  protected vm:any;
   constructor() { }
 
   ngOnInit() {
+    this.vm = PageConf.default;
   }
 
 }

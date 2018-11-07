@@ -10,12 +10,9 @@
           </div>
 
           <div class="col-lg-8 col-md-8 col-sm-9">
-            <h3>Quisque mollis est justo<br>nec pretium elit vulputate sit amet.</h3>
-            <p>In at velit eu est vehicula posuere. Sed sagittis, urna nec pellentesque molestie, est
-              nisi laoreet metus. Nam ac turpis ut orci eleifend suscipit eu in odio. Morbi volutpat
-              mattis urna, et fringilla eros ultrices eu.</p>
-
-            <a class="button button-small button-line-dark" href="#">download pdf</a>
+            <h3 [innerHtml]="this.vm.title"></h3>
+            <p>{{this.vm.text}}</p>
+            <a class="button button-small button-line-dark" href={{this.vm.url4ForPapers}} target="_blank">Submeta aqui o seu tema</a>
           </div>
 
         </div>

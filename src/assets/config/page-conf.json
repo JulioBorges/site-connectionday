@@ -2,7 +2,7 @@
     "enableAbout": true,
     "enableSpeakers": false,
     "enableProgram": false,
-    "enableDownload": false,
+    "enableDownload": true,
     "enableVenue": false,
     "enableRegister": false,
     "enableFunFacts": true,
@@ -10,7 +10,7 @@
     "enableSponsors": true,
     "enableFooter": true,
     "enableShowTeam": true,
-    "urlCodeConduct": "http://pt-br.confcodeofconduct.com/",
+    "urlCodeConduct": "https://pt-br.confcodeofconduct.com/",
     "titleSections": {
         "info": "Sobre",
         "speakers": "Palestras",
