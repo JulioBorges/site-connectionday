@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import * as Gallery from '../../assets/config/gallery.json'
 
 @Component({
@@ -8,9 +8,10 @@ import * as Gallery from '../../assets/config/gallery.json'
 })
 export class GalleryComponent implements OnInit {
   protected vm: any;
-  protected showAllImages: boolean = false;
+  protected loadMoreActive: boolean;
 
-  constructor() {
+  constructor(private chRef: ChangeDetectorRef) {
+    this.loadMoreActive = true;
   }
 
   ngOnInit() {
@@ -18,7 +19,8 @@ export class GalleryComponent implements OnInit {
   }
 
   seeAllImages() {
-    this.showAllImages = true;
+    this.loadMoreActive = false;
+    this.chRef.detectChanges();
     console.log("executoy");
   }
 

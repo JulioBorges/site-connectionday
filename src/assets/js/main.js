@@ -130,13 +130,13 @@ jQuery(document).ready(function ($) {
 	});
 
 	$('.popup-youtube').magnificPopup({
-        disableOn: 700,
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        removalDelay: 160,
-        preloader: false,
-        fixedContentPos: false
-    });
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+		fixedContentPos: false
+	});
 
 	//LOAD MORE
 	$('#list-speaker li:lt(4)').show();
@@ -203,9 +203,13 @@ jQuery(document).ready(function ($) {
 	var owl = $("#testimonial-carousel");
 
 	owl.owlCarousel({
-		navigation: true, // Show next and prev buttons
+		autoplay: true,
+		navigation: false, // Show next and prev buttons
 		slideSpeed: 100,
-		paginationSpeed: 200,
+		paginationSpeed: 300,
+		loop: true,
+		autoplayTimeout: 1000,
+		autoplayHoverPause: true,
 		singleItem: true,
 		transitionStyle: "fade"
 	});
@@ -233,7 +237,7 @@ jQuery(document).ready(function ($) {
 	// FUNFACTS
 	$('.number').counterUp({
 		delay: 10,
-		time: 3000
+		time: 2500
 	});
 
 	//FIX HOVER EFFECT ON IOS DEVICES
