@@ -1,15 +1,8 @@
 {
-    "title": "Patrocinadores",
+    "title": "Patrocínio",
     "subtitle": "Seja um dos nossos patrocinadores e colabore para a realização deste grande evento.",
-    "diamond": [
-
-    ],
-    "gold": [
-
-    ],
-    "silver": [
-
-    ],
-    "bronze":[
-    ]
+    "diamond": [],
+    "gold": [],
+    "silver": [],
+    "bronze": []
 }
