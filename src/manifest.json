@@ -1,10 +1,11 @@
 {
   "name": "Connection Day",
-  "short_name": "site-connection-day",
-  "theme_color": "#1976d2",
+  "short_name": "Connect Day",
+  "theme_color": "#383838",
   "background_color": "#fafafa",
-  "display": "standalone",
+  "display": "fullscreen",
   "scope": "/",
+  "orientation": "portrait",
   "start_url": "/",
   "icons": [
     {

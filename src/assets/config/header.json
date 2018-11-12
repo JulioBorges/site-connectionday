@@ -2,21 +2,25 @@
     "slides": [
         {
             "mainImage": "assets/img/slide1.jpg",
+            "thumb": "assets/img/slide_thumb_1.jpg",
             "title": "Connection Day",
             "subTitle": "O maior evento de tecnologia do centro-oeste mineiro."
         },
         {
             "mainImage": "assets/img/slide2.jpg",
+            "thumb": "assets/img/slide_thumb_2.jpg",
             "title": "PALESTRAS",
             "subTitle": ""
         },
         {
             "mainImage": "assets/img/slide3.jpg",
+            "thumb": "assets/img/slide_thumb_3.jpg",
             "title": "CONHECIMENTO",
             "subTitle": ""
         },
         {
             "mainImage": "assets/img/slide4.jpg",
+            "thumb": "assets/img/slide_thumb_4.jpg",
             "title": "NETWORKING",
             "subTitle": ""
         }
