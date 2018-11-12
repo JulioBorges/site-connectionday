@@ -7,7 +7,7 @@ import * as PageConfig from '../../assets/config/page-conf.json';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  protected vm: any;
+  public vm: any;
 
   constructor() { }
 

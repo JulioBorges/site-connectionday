@@ -7,7 +7,7 @@ import * as Testimonial from '../../assets/config/testimonial.json'
   styleUrls: ['./testimonial.component.css']
 })
 export class TestimonialComponent implements OnInit {
-  protected vm: any;
+  public vm: any;
 
   constructor() { }
 

@@ -7,7 +7,7 @@ import * as HeaderConfig from '../../assets/config/header.json';
   styleUrls: ['./highlight.component.css']
 })
 export class HighlightComponent implements OnInit {
-  protected vm: any;
+  public vm: any;
 
   constructor() { }
 

@@ -7,7 +7,7 @@ import * as PageConfig from '../assets/config/page-conf.json';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  protected vm: any;
+  public vm: any;
 
   constructor() { }
 

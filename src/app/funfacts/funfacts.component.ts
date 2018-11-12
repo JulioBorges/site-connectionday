@@ -6,7 +6,7 @@ import * as Funfacts from '../../assets/config/funfacts.json'
   styleUrls: ['./funfacts.component.css']
 })
 export class FunfactsComponent implements OnInit {
-  protected vm:any;
+  public vm: any;
 
   constructor() { }
 

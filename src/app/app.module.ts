@@ -21,6 +21,8 @@ import { SponsorsComponent } from './sponsors/sponsors.component';
 import { FooterComponent } from './footer/footer.component';
 import { SubfooterComponent } from './subfooter/subfooter.component';
 import { SalvattoreDirective } from './salvattore.directive';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 const rotas: Routes = [
   {
@@ -56,7 +58,8 @@ const rotas: Routes = [
     RouterModule.forChild(
       rotas
     ),
-    BrowserModule
+    BrowserModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
