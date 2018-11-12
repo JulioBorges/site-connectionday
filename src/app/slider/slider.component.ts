@@ -7,7 +7,7 @@ import * as HeaderConfig from '../../assets/config/header.json';
   styleUrls: ['./slider.component.css']
 })
 export class SliderComponent implements OnInit {
-  protected vm: any;
+  public vm: any;
 
   constructor() { }
 

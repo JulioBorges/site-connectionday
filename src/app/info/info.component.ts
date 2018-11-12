@@ -7,7 +7,7 @@ import * as InfoConfig from '../../assets/config/info.json';
   styleUrls: ['./info.component.css']
 })
 export class InfoComponent implements OnInit {
-  protected vm: any;
+  public vm: any;
 
   constructor() { }
 

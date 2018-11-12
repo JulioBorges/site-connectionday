@@ -7,7 +7,7 @@ import * as Sponsors from '../../assets/config/sponsors.json'
   styleUrls: ['./sponsors.component.css']
 })
 export class SponsorsComponent implements OnInit {
-  protected vm:any;
+  public vm: any;
 
   constructor() { }
 

@@ -7,8 +7,8 @@ import * as Gallery from '../../assets/config/gallery.json'
   styleUrls: ['./gallery.component.css']
 })
 export class GalleryComponent implements OnInit {
-  protected vm: any;
-  protected loadMoreActive: boolean;
+  public vm: any;
+  public loadMoreActive: boolean;
 
   constructor(private chRef: ChangeDetectorRef) {
     this.loadMoreActive = true;
@@ -21,7 +21,6 @@ export class GalleryComponent implements OnInit {
   seeAllImages() {
     this.loadMoreActive = false;
     this.chRef.detectChanges();
-    console.log("executoy");
   }
 
 }
