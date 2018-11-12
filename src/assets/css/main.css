@@ -572,7 +572,7 @@ a {
 }
 
 #venue .venue {
-	background-image: url(../img/bg-venue.png);
+	background-image: url(../img/bg-venue.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -667,7 +667,7 @@ a {
 /* FUNFACTS */
 
 #funfacts  {
-	background-image: url(../img/bg-funfacts.png);
+	background-image: url(../img/bg-funfacts.jpg);
 	background-repeat: no-repeat;
 	background-attachment:fixed;
 	background-position: center;
@@ -783,7 +783,7 @@ a {
 	padding:0px 16px;
 	margin:0 0 10px 0;
 	display:inline-block;
-	float:right;
+	float: right;
 }
 
 .price-table .desc li {
@@ -828,7 +828,7 @@ a {
 
 #testimonial {
 	background:#fac42b;
-	background-image: url(../img/bg-testimonial.png);
+	background-image: url(../img/bg-testimonial.jpg);
 	background-repeat: no-repeat;
 	background-attachment:fixed;
 	background-position: center;
