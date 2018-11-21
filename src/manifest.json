@@ -4,8 +4,8 @@
   "theme_color": "#383838",
   "background_color": "#fafafa",
   "display": "fullscreen",
-  "scope": "/",
   "orientation": "portrait",
+  "Scope": "/",
   "start_url": "/",
   "icons": [
     {
@@ -48,5 +48,6 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "splash_pages": null
 }

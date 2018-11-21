@@ -75,10 +75,6 @@ section {
 	background:#ffffff;
 }
 
-.lead {
-	color:#999999;
-}
-
 a {
 	outline:none;
 }
@@ -87,7 +83,9 @@ a {
 	background:#fac42b;
 }
 
-
+.color-strong {
+	color: black !important;
+}
 /* NAVBAR */
 
 .navbar-custom {
@@ -191,7 +189,7 @@ a {
 }
 
 #highlight #left {
-	color:#b0b0b0;
+	color: #ffffff;
 	background:#262626;
 	min-height:100px;
 }
