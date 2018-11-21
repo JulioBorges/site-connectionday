@@ -4,12 +4,18 @@
     {
       "name": "app",
       "installMode": "prefetch",
+      "updateMode": "prefetch",
       "resources": {
         "files": [
           "/favicon.ico",
           "/index.html",
           "/*.css",
-          "/*.js"
+          "/*.js",
+          "/assets/css/**",
+          "/assets/js/**"
+        ],
+        "urls": [
+          "https://fonts.googleapis.com/css?family=Open+Sans:400,300"
         ]
       }
     },
