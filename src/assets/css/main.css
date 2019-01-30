@@ -566,7 +566,7 @@ a {
 
 #venue {
 	padding-top:0;
-	padding-bottom:110px;
+	padding-bottom:0px !important; 
 }
 
 #venue .venue {
@@ -577,7 +577,7 @@ a {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	height:600px;
-	margin-bottom:110px;
+	/*margin-bottom:110px;*/
 	display:table;
 	width:100%;
 }

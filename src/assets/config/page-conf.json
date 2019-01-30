@@ -3,14 +3,16 @@
     "enableSpeakers": false,
     "enableProgram": false,
     "enableDownload": true,
-    "enableVenue": false,
-    "enableRegister": false,
+    "enableVenue": true,
+    "enableRegister": true,
     "enableFunFacts": true,
-    "enableGallery": true,
+    "enableGallery": false,
     "enableSponsors": true,
     "enableFooter": true,
     "enableShowTeam": true,
+    "enableBlog": true,
     "urlCodeConduct": "https://pt-br.confcodeofconduct.com/",
+    "urlBlog": "https://conectados.connectionday.tech",
     "titleSections": {
         "info": "Sobre",
         "speakers": "Palestras",
@@ -22,6 +24,7 @@
         "gallery": "2018",
         "sponsors": "Patrocínio",
         "footer": "Contato",
-        "conductCode": "Código de conduta"
+        "conductCode": "Código de conduta",
+        "blog": "Blog"
     }
 }

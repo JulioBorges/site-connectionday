@@ -10,30 +10,42 @@
             patrocinadores</a>
         </div>
 
+        <p class="lead">Patrocinadores diamante</p>
         <div class="sponsors-carousel" *ngIf="this.vm.diamond.length > 0">
-          <div class="sponsor">
-            <img class="img-responsive" src="assets/img/sponsor1.png" alt="">
+          <div class="sponsor" *ngFor="let spDiamond of this.vm.diamond; let i = index">
+            <a href="{{spDiamond.url}}"><img class="img-responsive" src="{{spDiamond.img}}" alt="{{spDiamond.alt}}"></a>
           </div>
           <br>
         </div>
 
+        <p class="lead">Patrocinadores ouro</p>
         <div class="sponsors-carousel" *ngIf="this.vm.gold.length > 0">
-          <div class="sponsor">
-            <img class="img-responsive" src="assets/img/sponsor1.png" alt="">
+          <div class="sponsor" *ngFor="let spGold of this.vm.gold; let i = index">
+            <a href="{{spGold.url}}"><img class="img-responsive" src="{{spGold.img}}" alt="{{spGold.alt}}"></a>
           </div>
           <br>
         </div>
 
+        <p class="lead">Patrocinadores prata</p>
         <div class="sponsors-carousel" *ngIf="this.vm.silver.length > 0">
-          <div class="sponsor">
-            <img class="img-responsive" src="assets/img/sponsor1.png" alt="">
+          <div class="sponsor" *ngFor="let spSilver of this.vm.silver; let i = index">
+            <a href="{{spSilver.url}}"><img class="img-responsive" src="{{spSilver.img}}" alt="{{spSilver.alt}}"></a>
           </div>
           <br>
         </div>
 
+        <p class="lead">Patrocinadores bronze</p>
         <div class="sponsors-carousel" *ngIf="this.vm.bronze.length > 0">
-          <div class="sponsor">
-            <img class="img-responsive" src="assets/img/sponsor1.png" alt="">
+          <div class="sponsor" *ngFor="let spBronze of this.vm.bronze; let i = index">
+            <a href="{{spBronze.url}}"><img class="img-responsive" src="{{spBronze.img}}" alt="{{spBronze.alt}}"></a>
+          </div>
+          <br>
+        </div>
+
+        <p class="lead">Apoiadores</p>
+        <div class="sponsors-carousel" *ngIf="this.vm.support.length > 0">
+          <div class="sponsor" *ngFor="let sup of this.vm.support; let i = index">
+            <a href="{{sup.url}}"><img class="img-responsive" src="{{sup.img}}" alt="{{sup.alt}}"></a>
           </div>
         </div>
       </div>

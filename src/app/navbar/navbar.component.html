@@ -18,9 +18,10 @@
         <li *ngIf="this.vm.enableProgram"><a data-toggle="elementscroll" href="#program">{{this.vm.titleSections.program}}</a></li>
         <li *ngIf="this.vm.enableVenue"><a data-toggle="elementscroll" href="#venue">{{this.vm.titleSections.venue}}</a></li>
         <li *ngIf="this.vm.enableRegister"><a data-toggle="elementscroll" href="#register">{{this.vm.titleSections.register}}</a></li>
-        <li *ngIf="this.vm.enableGallery"><a data-toggle="elementscroll" href="#funfacts">{{this.vm.titleSections.gallery}}</a></li>
-        <li *ngIf="this.vm.enableShowTeam"><a data-toggle="elementscroll" href="#testimonial">{{this.vm.titleSections.testimonial}}</a></li>
+        <li><a data-toggle="elementscroll" target="_blank" href="https://conectados.connectionday.tech/connection-day-2018/">2018</a></li>
+        <li><a data-toggle="elementscroll" href="#funfacts">O evento</a></li>
         <li *ngIf="this.vm.enableSponsors"><a data-toggle="elementscroll" href="#sponsors">{{this.vm.titleSections.sponsors}}</a></li>
+        <li *ngIf="this.vm.enableBlog"><a data-toggle="elementscroll" href={{this.vm.urlBlog}}>{{this.vm.titleSections.blog}}</a></li>
         <li><a data-toggle="elementscroll" href={{this.vm.urlCodeConduct}}>{{this.vm.titleSections.conductCode}}</a></li>
       </ul>
     </div>

@@ -1,0 +1,29 @@
+{
+    "tickets": [
+        {
+            "description": "Lote 1",
+            "price": "???",
+            "line1": "Kit do evento",
+            "line2": "Coffee break",
+            "line3": "Todas as palestras",
+            "line4": "De 14/02/19 até 28/02/19"
+        },
+        {
+            "description": "Lote 2",
+            "price": "???",
+            "line1": "Kit do evento",
+            "line2": "Coffee break",
+            "line3": "Todas as palestras",
+            "line4": "De 29/02/19 até 28/03/19"
+        },
+        {
+            "description": "Lote 3",
+            "price": "???",
+            "line1": "Kit do evento",
+            "line2": "Coffee break",
+            "line3": "Todas as palestras",
+            "line4": "De 29/03/19 até 30/04/19"
+        }
+    ],
+    "urlEvent": "#"
+}
