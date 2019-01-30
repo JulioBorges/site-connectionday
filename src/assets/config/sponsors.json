@@ -1,8 +1,84 @@
 {
     "title": "Patrocínio",
     "subtitle": "Seja um dos nossos patrocinadores e colabore para a realização deste grande evento.",
-    "diamond": [],
-    "gold": [],
-    "silver": [],
-    "bronze": []
+    "diamond": [
+        {
+            "img": "assets/img/eng-venda.png",
+            "url": "https://www.facebook.com/institutoengenhariadavenda/",
+            "alt": "Engenharia da venda"
+        },
+        {
+            "img": "assets/img/IEvenda.png",
+            "url": "https://www.facebook.com/institutoengenhariadavenda/",
+            "alt": "Instituto IE venda"
+        },
+        {
+            "img": "assets/img/sicoobdivicred.png",
+            "url": "http://www.sicoobdivicred.com.br/#p",
+            "alt": "Sicoob crediverde"
+        }
+    ],
+    "gold": [
+        {
+            "img": "assets/img/pitagoras.png",
+            "url": "http://www.faculdadepitagoras.com.br",
+            "alt": "Faculdade Pitágoras"
+        }
+    ],
+    "silver": [
+        {
+            "img": "assets/img/inovamobil.png",
+            "url": "http://www.inovamobil.com.br",
+            "alt": "Inovação computação móvel"
+        },
+        {
+            "img": "assets/img/inovatec.png",
+            "url": "https://www.inovacaotec.com.br/",
+            "alt": "Inovação técnologia"
+        },
+        {
+            "img": "assets/img/stackoverflow.png",
+            "url": "https://pt.stackoverflow.com/",
+            "alt": "Stackoverflow português"
+        },
+        {
+            "img": "assets/img/supernerd.png",
+            "url": "",
+            "alt": "Supernerd"
+        }
+    ],
+    "bronze": [
+        {
+            "img": "assets/img/brustin.png",
+            "url": "https://www.brustin.com.br/",
+            "alt": "Brustin interactive"
+        },
+        {
+            "img": "assets/img/cybercode.png",
+            "url": "",
+            "alt": "Cybercode"
+        },
+        {
+            "img": "assets/img/geec.png",
+            "url": "http://www.ecoworking.net.br/",
+            "alt": "Geec e e.Coworking"
+        }
+    ],
+    "support":[
+        {
+            "img": "assets/img/evoa.png",
+            "url": "",
+            "alt": "Evoa"
+        },
+        {
+            "img": "assets/img/grite.png",
+            "url": "",
+            "alt": "Grite Divinópolis"
+        },
+        {
+            "img": "assets/img/ribeironeto.png",
+            "url": "",
+            "alt": "Ribeiro Neto advogados"
+        }
+    ]
 }
