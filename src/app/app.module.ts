@@ -59,7 +59,7 @@ const rotas: Routes = [
       rotas
     ),
     BrowserModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('service-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
