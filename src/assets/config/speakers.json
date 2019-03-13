@@ -1,0 +1,13 @@
+{
+    "title": "Palestrantes convidados",
+    "subtitle": "Conheça nossos incríveis palestrantes convidados",
+    "speakers": [
+        {
+            "name": "Alexandre Melo",
+            "img": "assets/img/speakers/alexandre.jpg",
+            "company": "Instituto Engenharia da Venda",
+            "role": "CEO no",
+            "presentation": "<p>CEO no instituto engenharia da venda, é o criador de várias iniciativas...</p>"
+        }
+    ]
+}
