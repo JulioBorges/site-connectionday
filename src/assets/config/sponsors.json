@@ -1,15 +1,15 @@
 {
-    "title": "Patrocínio",
-    "subtitle": "Seja um dos nossos patrocinadores e colabore para a realização deste grande evento.",
+    "title": "Patrocínio / apoio",
+    "subtitle": "Seja um dos nossos patrocinadores/apoiadores e colabore para a realização deste grande evento.",
     "diamond": [
         {
             "img": "assets/img/eng-venda.png",
-            "url": "https://www.facebook.com/institutoengenhariadavenda/",
+            "url": "http://engenhariadavenda.com.br/",
             "alt": "Engenharia da venda"
         },
         {
             "img": "assets/img/IEvenda.png",
-            "url": "https://www.facebook.com/institutoengenhariadavenda/",
+            "url": "http://engenhariadavenda.com.br/",
             "alt": "Instituto IE venda"
         },
         {
@@ -32,19 +32,19 @@
             "alt": "Inovação computação móvel"
         },
         {
-            "img": "assets/img/inovatec.png",
-            "url": "https://www.inovacaotec.com.br/",
-            "alt": "Inovação técnologia"
-        },
-        {
             "img": "assets/img/stackoverflow.png",
             "url": "https://pt.stackoverflow.com/",
             "alt": "Stackoverflow português"
         },
         {
             "img": "assets/img/supernerd.png",
-            "url": "",
+            "url": "https://www.facebook.com/SuperNerdLoja/",
             "alt": "Supernerd"
+        },
+        {
+            "img": "assets/img/ivoclub.png",
+            "url": "https://www.ivoclub.com.br/",
+            "alt": "Ivo Club"
         }
     ],
     "bronze": [
@@ -62,6 +62,11 @@
             "img": "assets/img/geec.png",
             "url": "http://www.ecoworking.net.br/",
             "alt": "Geec e e.Coworking"
+        },
+        {
+            "img": "assets/img/nex.png",
+            "url": "https://www.nexespecialistas.com/",
+            "alt": "Nex especialistas"
         }
     ],
     "support":[
@@ -79,6 +84,11 @@
             "img": "assets/img/ribeironeto.png",
             "url": "",
             "alt": "Ribeiro Neto advogados"
+        },
+        {
+            "img": "assets/img/gdg.png",
+            "url": "https://www.meetup.com/pt-BR/GDG-Divinopolis/",
+            "alt": "GDG Divinópolis"
         }
     ]
 }

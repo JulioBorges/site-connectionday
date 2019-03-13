@@ -75,12 +75,6 @@ jQuery(document).ready(function ($) {
 			fullScreenOffsetContainer: ".header"
 		});
 
-
-
-
-
-
-
 	//SMOOTH SCROLL EFFECT
 	$('[data-toggle="elementscroll"]').on("click", function () {
 
@@ -97,7 +91,6 @@ jQuery(document).ready(function ($) {
 
 	});
 
-
 	//COUNTDOWN TIMER
 	var newYear = new Date();
 	newYear = new Date(newYear.getFullYear() + 1, 1 - 1, 1);
@@ -113,7 +106,6 @@ jQuery(document).ready(function ($) {
 			$('#defaultCountdown').countdown({ until: newYear });
 		}
 	);
-
 
 	//MAGNIFIC POPUP LOAD CONTENT VIA AJAX
 	$('.html-popup').magnificPopup({ type: 'inline' });
@@ -243,7 +235,6 @@ jQuery(document).ready(function ($) {
 	//FIX HOVER EFFECT ON IOS DEVICES
 	document.addEventListener("touchstart", function () { }, true);
 
-
 	//GOOGLE MAPS
 	/*		  
 		// Creating a LatLng object containing the coordinate for the center of the map
@@ -298,19 +289,16 @@ jQuery(document).ready(function ($) {
 
 $(window).load(function () {
 
-
 	$("#nav-primary").sticky({ topSpacing: 0, });
 
 	//PRELOADER
 	$('#preload').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-
 
 	//CUSTOM TOOLBAR
 	$("#content").mCustomScrollbar({
 		theme: "dark-3",
 		live: "on",
 	});
-
 });
 
 // REGISTER FORM FUNCTION
