@@ -9,7 +9,8 @@ import * as PageConfig from '../assets/config/page-conf.json';
 export class AppComponent implements OnInit {
   public vm: any;
 
-  constructor() { }
+  constructor() { 
+  }
 
   ngOnInit() {
     this.vm = PageConfig.default

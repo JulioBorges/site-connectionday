@@ -1,0 +1,19 @@
+<div class="row">
+    <div id="speaker-detail" class="col-lg-10 col-lg-offset-1 h-100">
+        <div class="row h-100">
+            <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+
+            <div class="col-md-5 col-lg-5 no-padding">
+                <img class="img-responsive" src="{{speaker.img}}" alt="" />
+            </div>
+
+            <div class="h-100 col-md-7 col-lg-7">
+                <h2>{{speaker.name}}</h2>
+                <p class="lead"><strong [innerHTML]="speaker.role"></strong></p>
+                <div id="content" [innerHTML]="speaker.presentation">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
