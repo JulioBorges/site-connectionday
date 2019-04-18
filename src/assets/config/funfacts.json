@@ -3,22 +3,22 @@
     "facts": [
         {
             "class": "pe pe-4x pe-7s-alarm",
-            "number": 12,
+            "number": 14,
             "description": "Horas de conteúdo"
         },
         {
             "class": "pe pe-4x pe-7s-micro",
-            "number": 17,
-            "description": "Palestras simultâneas"
+            "number": 20,
+            "description": "Palestras"
         },
         {
             "class": "pe pe-4x pe-7s-display2",
             "number": 3,
-            "description": "Auditórios"
+            "description": "Salas simultâneas"
         },
         {
             "class": "pe pe-va pe-4x pe-7s-users",
-            "number": 150,
+            "number": 200,
             "description": "Cadeiras disponíveis"
         }
     ]

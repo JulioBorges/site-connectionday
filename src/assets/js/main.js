@@ -131,7 +131,7 @@ jQuery(document).ready(function ($) {
 	});
 
 	//LOAD MORE
-	$('#list-speaker li:lt(4)').show();
+	$('#list-speaker li:lt(20)').show();
 
 	$('#loadmore').on("click", function () {
 		$('#list-speaker li:lt(8)').fadeIn();
@@ -211,7 +211,7 @@ jQuery(document).ready(function ($) {
 
 	owl.owlCarousel({
 
-		autoPlay: false,
+		autoPlay: true,
 		itemsCustom: [
 			[0, 1],
 			[450, 1],

@@ -2,966 +2,285 @@
 <section id="program" data-component="program">
   <div class="container">
     <div class="row">
-
       <div class="col-lg-12">
-
-        <h2 class="uppercase">PROGRAM</h2>
-        <p class="lead">Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee
-          squid.</p>
+        <h2 class="uppercase">{{ this.vm.title }}</h2>
+        <p class="lead">{{ this.vm.subtitle }}</p>
 
         <!-- SCHEDULE TAB -->
         <ul id="myTab" class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active"><a href="#day1" id="day1-tab" role="tab" data-toggle="tab"
-              aria-controls="day1" aria-expanded="true">Day 1</a></li>
-          <li role="presentation" class=""><a href="#day2" role="tab" id="day2-tab" data-toggle="tab" aria-controls="day2"
-              aria-expanded="false">Day 2</a></li>
-          <li role="presentation" class=""><a href="#day3" role="tab" id="day3-tab" data-toggle="tab" aria-controls="day3"
-              aria-expanded="false">Day 3</a></li>
+          <li role="presentation" class="active">
+            <a
+              href="#auditorio"
+              id="auditorio-tab"
+              role="tab"
+              data-toggle="tab"
+              aria-controls="auditorio"
+              aria-expanded="true"
+              >Auditório</a
+            >
+          </li>
+          <li role="presentation" class="">
+            <a
+              href="#sala2"
+              role="tab"
+              id="sala2-tab"
+              data-toggle="tab"
+              aria-controls="sala2"
+              aria-expanded="false"
+              >Sala 2</a
+            >
+          </li>
+          <li role="presentation" class="">
+            <a
+              href="#sala3"
+              role="tab"
+              id="sala3-tab"
+              data-toggle="tab"
+              aria-controls="sala3"
+              aria-expanded="false"
+              >Sala 3</a
+            >
+          </li>
         </ul>
 
         <!-- CONTENT -->
         <div id="myTabContent" class="tab-content">
-
-          <!-- DAY 1 -->
-          <div role="tabpanel" class="tab-pane fade active in" id="day1" aria-labelledby="day1-tab">
+          <!-- AUDITORIO -->
+          <div
+            role="tabpanel"
+            class="tab-pane fade active in"
+            id="auditorio"
+            aria-labelledby="auditorio-tab"
+          >
             <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
-
-              <!-- PROGRAM 1-->
-              <div class="panel panel-default">
-
-                <!-- Program Heading -->
-                <div class="panel-heading" role="tab" id="heading1">
-
+              <div class="panel panel-default" *ngFor="let room of this.vm.room1; let i = index">
+                <div class="panel-heading" role="tab" id="{{ room.heading }}">
                   <div class="row">
-                    <div class="col-lg-1 col-md-1 col-sm-1">
-                      <p class="date">08.00</p>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                      <p class="date">{{ room.time }}</p>
                     </div>
 
-                    <div class="col-lg-11 col-md-11 col-sm-11">
-
+                    <div class="col-lg-10 col-md-10 col-sm-10">
                       <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#Program1" aria-expanded="true"
-                          aria-controls="Program1">
-                          Mauris rhoncus scelerisque lacus
+                        <a
+                          data-toggle="collapse"
+                          data-parent="#accordion"
+                          href="{{ room.id }}"
+                          aria-expanded="true"
+                        >
+                          {{ room.title }}
                         </a>
                       </h4>
                     </div>
                   </div>
-
                 </div>
 
-                <div id="Program1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
-                  <!-- Program Content -->
+                <div
+                  id="{{ room.idItem }}"
+                  class="panel-collapse collapse"
+                  role="tabpanel"
+                  *ngIf="room.showDetails"
+                >
                   <div class="panel-body">
                     <div class="row">
                       <div class="col-lg-2 col-md-2 col-sm-2">
-                        <img class="img-responsive img-circle" src="assets/img/speaker1.png" alt="">
+                        <img
+                          class="img-responsive img-circle"
+                          src="{{ this.speakers[room.speakerId].img }}"
+                          alt=""
+                        />
                       </div>
 
-                      <div class="col-lg-7 col-md-7 col-sm-10">
-                        <p class="speaker-name uppercase">Stanley Willis</p>
-                        <h4>Mauris rhoncus scelerisque lacus</h4>
-                        <p>Sed facilisis justo vitae risus viverra vulputate. Mauris vel
-                          ipsum dignissim diam viverra condimentum. Donec sodales, diam
-                          eget mattis condimentum, quam neque tempus purus, dictum
-                          viverra risus nisl quis metus.</p>
-
-                        <p><i class="fa fa-lg fa-clock-o"></i> <span class="small">45mins</span></p>
-                        <p><i class="fa fa-lg fa-map-marker"></i> <span class="small">Saloon
-                            A</span></p>
-                        <p><i class="fa fa-lg fa-signal"></i> <span class="small">Beginner</span></p>
+                      <div class="col-lg-10 col-md-10 col-sm-10">
+                        <p class="speaker-name uppercase">
+                          {{ this.speakers[room.speakerId].name
+                          }}<span *ngIf="this.speakers[room.speakerId].linkedin != ''"
+                            >&nbsp;-&nbsp;</span
+                          ><a
+                            *ngIf="this.speakers[room.speakerId].linkedin"
+                            target="_blank"
+                            href="{{ this.speakers[room.speakerId].linkedin }}"
+                          >
+                            <i class="fa fa-lg fa-linkedin-square"></i>
+                            <span class="small">Linkedin</span>
+                          </a>
+                        </p>
+                        <h4>{{ this.speakers[room.speakerId].lecture.title }}</h4>
+                        <p [innerHTML]="this.speakers[room.speakerId].lecture.resume"></p>
+                        <br /><br />
+                        <p>
+                          <i class="fa fa-lg fa-clock-o"></i>&nbsp;&nbsp;
+                          <span class="small">{{
+                            this.speakers[room.speakerId].lecture.duration
+                          }}</span>
+                        </p>
+                        <p>
+                          <i class="fa fa-lg fa-flag"></i>&nbsp;&nbsp;
+                          <span class="small">
+                            {{ this.speakers[room.speakerId].lecture.type }}
+                          </span>
+                        </p>
                       </div>
-
-                      <div class="col-lg-3 col-md-3 col-sm-10">
-                        <h5>About Stanley Willis</h5>
-                        <p class="small">Sed non congue nunc. Fusce pulvinar elementum
-                          rhoncus. Duis sit amet metus erat. Sed et ligula mattis, dictum
-                          nisl et, vestibulum urna.</p>
-                        <span class="about-speaker"><i class="fa fa-lg fa-globe"></i> <a class="small" href="#">themecube.net</a></span>
-                      </div>
-
                     </div>
                   </div>
-
                 </div>
-
               </div>
-
-              <!-- PROGRAM 2-->
-              <div class="panel panel-default">
-
-                <!-- Program Heading -->
-                <div class="panel-heading" role="tab" id="heading2">
-
-                  <div class="row">
-                    <div class="col-lg-1 col-md-1 col-sm-1">
-                      <p class="date">08.45</p>
-                    </div>
-
-                    <div class="col-lg-11 col-md-11 col-sm-11">
-
-                      <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#Program2" aria-expanded="true"
-                          aria-controls="Program2">
-                          Sed porta ex purus ut commodo est facilisis sit amet
-                        </a>
-                      </h4>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div id="Program2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
-                  <!-- Program Content -->
-                  <div class="panel-body">
-                    <div class="row">
-                      <div class="col-lg-2 col-md-2 col-sm-2">
-                        <img class="img-responsive img-circle" src="assets/img/speaker2.png" alt="">
-                      </div>
-
-                      <div class="col-lg-7 col-md-7 col-sm-10">
-                        <p class="speaker-name uppercase">Jane Richards</p>
-                        <h4>Sed porta ex purus, ut commodo est facilisis sit amet</h4>
-                        <p>Sed facilisis justo vitae risus viverra vulputate. Mauris vel
-                          ipsum dignissim diam viverra condimentum. Donec sodales, diam
-                          eget mattis condimentum, quam neque tempus purus, dictum
-                          viverra risus nisl quis metus.</p>
-
-                        <p><i class="fa fa-lg fa-clock-o"></i> <span class="small">45mins</span></p>
-                        <p><i class="fa fa-lg fa-map-marker"></i> <span class="small">Saloon
-                            A</span></p>
-                        <p><i class="fa fa-lg fa-signal"></i> <span class="small">Beginner</span></p>
-                      </div>
-
-                      <div class="col-lg-3 col-md-3 col-sm-10">
-                        <h5>About Jane Richards</h5>
-                        <p class="small">Sed non congue nunc. Fusce pulvinar elementum
-                          rhoncus. Duis sit amet metus erat. Sed et ligula mattis, dictum
-                          nisl et, vestibulum urna.</p>
-                        <span class="about-speaker"><i class="fa fa-lg fa-globe"></i> <a class="small" href="#">themecube.net</a></span>
-                      </div>
-
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
-
-              <!-- PROGRAM 3-->
-              <div class="panel panel-default">
-
-                <!-- Program Heading -->
-                <div class="panel-heading" role="tab" id="heading3">
-
-                  <div class="row">
-                    <div class="col-lg-1 col-md-1 col-sm-1">
-                      <p class="date">09.30</p>
-                    </div>
-
-                    <div class="col-lg-11 col-md-11 col-sm-11">
-
-                      <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#Program3" aria-expanded="true"
-                          aria-controls="Program3">
-                          Phasellus tellus libero placerat quis amet
-                        </a>
-                      </h4>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div id="Program3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
-                  <!-- Program Content -->
-                  <div class="panel-body">
-                    <div class="row">
-                      <div class="col-lg-2 col-md-2 col-sm-2">
-                        <img class="img-responsive img-circle" src="assets/img/speaker3.png" alt="">
-                      </div>
-
-                      <div class="col-lg-7 col-md-7 col-sm-10">
-                        <p class="speaker-name uppercase">Martin Pearson</p>
-                        <h4>Phasellus tellus libero, placerat quis amet</h4>
-                        <p>Sed facilisis justo vitae risus viverra vulputate. Mauris vel
-                          ipsum dignissim diam viverra condimentum. Donec sodales, diam
-                          eget mattis condimentum, quam neque tempus purus, dictum
-                          viverra risus nisl quis metus.</p>
-
-                        <p><i class="fa fa-lg fa-clock-o"></i> <span class="small">45mins</span></p>
-                        <p><i class="fa fa-lg fa-map-marker"></i> <span class="small">Saloon
-                            A</span></p>
-                        <p><i class="fa fa-lg fa-signal"></i> <span class="small">Beginner</span></p>
-                      </div>
-
-                      <div class="col-lg-3 col-md-3 col-sm-10">
-                        <h5>About Martin Pearson</h5>
-                        <p class="small">Sed non congue nunc. Fusce pulvinar elementum
-                          rhoncus. Duis sit amet metus erat. Sed et ligula mattis, dictum
-                          nisl et, vestibulum urna.</p>
-                        <span class="about-speaker"><i class="fa fa-lg fa-globe"></i> <a class="small" href="#">themecube.net</a></span>
-                      </div>
-
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
-
-              <!-- PROGRAM 4-->
-              <div class="panel panel-default">
-
-                <!-- Program Heading -->
-                <div class="panel-heading" role="tab" id="heading4">
-
-                  <div class="row">
-                    <div class="col-lg-1 col-md-1 col-sm-1">
-                      <p class="date">10.30</p>
-                    </div>
-
-                    <div class="col-lg-11 col-md-11 col-sm-11">
-
-                      <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#Program4" aria-expanded="true"
-                          aria-controls="Program4">
-                          Proin et augue massa
-                        </a>
-                      </h4>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div id="Program4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
-                  <!-- Program Content -->
-                  <div class="panel-body">
-                    <div class="row">
-                      <div class="col-lg-2 col-md-2 col-sm-2">
-                        <img class="img-responsive img-circle" src="assets/img/speaker4.png" alt="">
-                      </div>
-
-                      <div class="col-lg-7 col-md-7 col-sm-10">
-                        <p class="speaker-name uppercase">Jessica Green</p>
-                        <h4>Proin et augue massa</h4>
-                        <p>Sed facilisis justo vitae risus viverra vulputate. Mauris vel
-                          ipsum dignissim diam viverra condimentum. Donec sodales, diam
-                          eget mattis condimentum, quam neque tempus purus, dictum
-                          viverra risus nisl quis metus.</p>
-
-                        <p><i class="fa fa-lg fa-clock-o"></i> <span class="small">120mins</span></p>
-                        <p><i class="fa fa-lg fa-map-marker"></i> <span class="small">Saloon
-                            A</span></p>
-                        <p><i class="fa fa-lg fa-signal"></i> <span class="small">Intermediate</span></p>
-                      </div>
-
-                      <div class="col-lg-3 col-md-3 col-sm-10">
-                        <h5>About Jessica Green</h5>
-                        <p class="small">Sed non congue nunc. Fusce pulvinar elementum
-                          rhoncus. Duis sit amet metus erat. Sed et ligula mattis, dictum
-                          nisl et, vestibulum urna.</p>
-                        <span class="about-speaker"><i class="fa fa-lg fa-globe"></i> <a class="small" href="#">themecube.net</a></span>
-                      </div>
-
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
-
-              <!-- PROGRAM 5-->
-              <div class="panel panel-default">
-
-                <!-- Program Heading -->
-                <div class="panel-heading" role="tab" id="heading5">
-
-                  <div class="row">
-                    <div class="col-lg-1 col-md-1 col-sm-1">
-                      <p class="date">12.30</p>
-                    </div>
-
-                    <div class="col-lg-11 col-md-11 col-sm-11">
-
-                      <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#Program5" aria-expanded="true"
-                          aria-controls="Program5">
-                          Maecenas efficitur justo sed accumsan rhoncus
-                        </a>
-                      </h4>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div id="Program5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
-                  <!-- Program Content -->
-                  <div class="panel-body">
-                    <div class="row">
-                      <div class="col-lg-2 col-md-2 col-sm-2">
-                        <img class="img-responsive img-circle" src="assets/img/speaker5.png" alt="">
-                      </div>
-
-                      <div class="col-lg-7 col-md-7 col-sm-10">
-                        <p class="speaker-name uppercase">Herman Russell</p>
-                        <h4>Maecenas efficitur justo sed accumsan rhoncus</h4>
-                        <p>Sed facilisis justo vitae risus viverra vulputate. Mauris vel
-                          ipsum dignissim diam viverra condimentum. Donec sodales, diam
-                          eget mattis condimentum, quam neque tempus purus, dictum
-                          viverra risus nisl quis metus.</p>
-
-                        <p><i class="fa fa-lg fa-clock-o"></i> <span class="small">60mins</span></p>
-                        <p><i class="fa fa-lg fa-map-marker"></i> <span class="small">Saloon
-                            A</span></p>
-                        <p><i class="fa fa-lg fa-signal"></i> <span class="small">Intermediate</span></p>
-                      </div>
-
-                      <div class="col-lg-3 col-md-3 col-sm-10">
-                        <h5>About Herman Russell</h5>
-                        <p class="small">Sed non congue nunc. Fusce pulvinar elementum
-                          rhoncus. Duis sit amet metus erat. Sed et ligula mattis, dictum
-                          nisl et, vestibulum urna.</p>
-                        <span class="about-speaker"><i class="fa fa-lg fa-globe"></i> <a class="small" href="#">themecube.net</a></span>
-                      </div>
-
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
-
             </div>
           </div>
 
-          <!-- DAY 2 -->
-          <div role="tabpanel" class="tab-pane fade in" id="day2" aria-labelledby="day2-tab">
+          <!-- SALA 2 -->
+          <div role="tabpanel" class="tab-pane fade in" id="sala2" aria-labelledby="sala2-tab">
             <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
-
-              <!-- PROGRAM 6-->
-              <div class="panel panel-default">
-
-                <!-- Program Heading -->
-                <div class="panel-heading" role="tab" id="heading6">
-
+              <div class="panel panel-default" *ngFor="let room of this.vm.room2; let i = index">
+                <div class="panel-heading" role="tab" id="{{ room.heading }}">
                   <div class="row">
-                    <div class="col-lg-1 col-md-1 col-sm-1">
-                      <p class="date">09.00</p>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                      <p class="date">{{ room.time }}</p>
                     </div>
 
-                    <div class="col-lg-11 col-md-11 col-sm-11">
-
+                    <div class="col-lg-10 col-md-10 col-sm-10">
                       <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#Program6" aria-expanded="true"
-                          aria-controls="Program6">
-                          Cum sociis natoque penatibus
+                        <a
+                          data-toggle="collapse"
+                          data-parent="#accordion"
+                          href="{{ room.id }}"
+                          aria-expanded="true"
+                        >
+                          {{ room.title }}
                         </a>
                       </h4>
                     </div>
                   </div>
-
                 </div>
 
-                <div id="Program6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
-                  <!-- Program Content -->
+                <div
+                  id="{{ room.idItem }}"
+                  class="panel-collapse collapse"
+                  role="tabpanel"
+                  *ngIf="room.showDetails"
+                >
                   <div class="panel-body">
                     <div class="row">
                       <div class="col-lg-2 col-md-2 col-sm-2">
-                        <img class="img-responsive img-circle" src="assets/img/speaker6.png" alt="">
+                        <img
+                          class="img-responsive img-circle"
+                          src="{{ this.speakers[room.speakerId].img }}"
+                          alt=""
+                        />
                       </div>
 
-                      <div class="col-lg-7 col-md-7 col-sm-10">
-                        <p class="speaker-name uppercase">Joan Graves</p>
-                        <h4>Cum sociis natoque penatibus</h4>
-                        <p>Sed facilisis justo vitae risus viverra vulputate. Mauris vel
-                          ipsum dignissim diam viverra condimentum. Donec sodales, diam
-                          eget mattis condimentum, quam neque tempus purus, dictum
-                          viverra risus nisl quis metus.</p>
-
-                        <p><i class="fa fa-lg fa-clock-o"></i> <span class="small">60mins</span></p>
-                        <p><i class="fa fa-lg fa-map-marker"></i> <span class="small">Saloon
-                            A</span></p>
-                        <p><i class="fa fa-lg fa-signal"></i> <span class="small">Expert</span></p>
+                      <div class="col-lg-10 col-md-10 col-sm-10">
+                        <p class="speaker-name uppercase">
+                          {{ this.speakers[room.speakerId].name }}
+                          <span *ngIf="this.speakers[room.speakerId].linkedin">-</span>
+                          <a
+                            href="{{ this.speakers[room.speakerId].linkedin }}"
+                            *ngIf="this.speakers[room.speakerId].linkedin"
+                          >
+                            <i class="fa fa-lg fa-linkedin-square"></i>
+                            <span class="small">Linkedin</span>
+                          </a>
+                        </p>
+                        <h4>{{ this.speakers[room.speakerId].lecture.title }}</h4>
+                        <p [innerHTML]="this.speakers[room.speakerId].lecture.resume"></p>
+                        <br /><br />
+                        <p>
+                          <i class="fa fa-lg fa-clock-o"></i>&nbsp;&nbsp;
+                          <span class="small">{{
+                            this.speakers[room.speakerId].lecture.duration
+                          }}</span>
+                        </p>
+                        <p>
+                          <i class="fa fa-lg fa-flag"></i>&nbsp;&nbsp;
+                          <span class="small">
+                            {{ this.speakers[room.speakerId].lecture.type }}
+                          </span>
+                        </p>
                       </div>
-
-                      <div class="col-lg-3 col-md-3 col-sm-10">
-                        <h5>About Joan Graves</h5>
-                        <p class="small">Sed non congue nunc. Fusce pulvinar elementum
-                          rhoncus. Duis sit amet metus erat. Sed et ligula mattis, dictum
-                          nisl et, vestibulum urna.</p>
-                        <span class="about-speaker"><i class="fa fa-lg fa-globe"></i> <a class="small" href="#">themecube.net</a></span>
-                      </div>
-
                     </div>
                   </div>
-
                 </div>
-
               </div>
-
-              <!-- PROGRAM 7-->
-              <div class="panel panel-default">
-
-                <!-- Program Heading -->
-                <div class="panel-heading" role="tab" id="heading7">
-
-                  <div class="row">
-                    <div class="col-lg-1 col-md-1 col-sm-1">
-                      <p class="date">10.00</p>
-                    </div>
-
-                    <div class="col-lg-11 col-md-11 col-sm-11">
-
-                      <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#Program7" aria-expanded="true"
-                          aria-controls="Program7">
-                          Maecenas ut iaculis lorem eu suscipit
-                        </a>
-                      </h4>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div id="Program7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
-                  <!-- Program Content -->
-                  <div class="panel-body">
-                    <div class="row">
-                      <div class="col-lg-2 col-md-2 col-sm-2">
-                        <img class="img-responsive img-circle" src="assets/img/speaker7.png" alt="">
-                      </div>
-
-                      <div class="col-lg-7 col-md-7 col-sm-10">
-                        <p class="speaker-name uppercase">Peter Reid</p>
-                        <h4>Maecenas ut iaculis lorem eu suscipit</h4>
-                        <p>Sed facilisis justo vitae risus viverra vulputate. Mauris vel
-                          ipsum dignissim diam viverra condimentum. Donec sodales, diam
-                          eget mattis condimentum, quam neque tempus purus, dictum
-                          viverra risus nisl quis metus.</p>
-
-                        <p><i class="fa fa-lg fa-clock-o"></i> <span class="small">45mins</span></p>
-                        <p><i class="fa fa-lg fa-map-marker"></i> <span class="small">Saloon
-                            A</span></p>
-                        <p><i class="fa fa-lg fa-signal"></i> <span class="small">Beginner</span></p>
-                      </div>
-
-                      <div class="col-lg-3 col-md-3 col-sm-10">
-                        <h5>About Peter Reid</h5>
-                        <p class="small">Sed non congue nunc. Fusce pulvinar elementum
-                          rhoncus. Duis sit amet metus erat. Sed et ligula mattis, dictum
-                          nisl et, vestibulum urna.</p>
-                        <span class="about-speaker"><i class="fa fa-lg fa-globe"></i> <a class="small" href="#">themecube.net</a></span>
-                      </div>
-
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
-
-              <!-- PROGRAM 8-->
-              <div class="panel panel-default">
-
-                <!-- Program Heading -->
-                <div class="panel-heading" role="tab" id="heading8">
-
-                  <div class="row">
-                    <div class="col-lg-1 col-md-1 col-sm-1">
-                      <p class="date">10.45</p>
-                    </div>
-
-                    <div class="col-lg-11 col-md-11 col-sm-11">
-
-                      <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#Program8" aria-expanded="true"
-                          aria-controls="Program8">
-                          Sed et molestie nulla bibendum
-                        </a>
-                      </h4>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div id="Program8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
-                  <!-- Program Content -->
-                  <div class="panel-body">
-                    <div class="row">
-                      <div class="col-lg-2 col-md-2 col-sm-2">
-                        <img class="img-responsive img-circle" src="assets/img/speaker8.png" alt="">
-                      </div>
-
-                      <div class="col-lg-7 col-md-7 col-sm-10">
-                        <p class="speaker-name uppercase">Tracey Curtis</p>
-                        <h4>Sed et molestie nulla bibendum</h4>
-                        <p>Sed facilisis justo vitae risus viverra vulputate. Mauris vel
-                          ipsum dignissim diam viverra condimentum. Donec sodales, diam
-                          eget mattis condimentum, quam neque tempus purus, dictum
-                          viverra risus nisl quis metus.</p>
-
-                        <p><i class="fa fa-lg fa-clock-o"></i> <span class="small">60mins</span></p>
-                        <p><i class="fa fa-lg fa-map-marker"></i> <span class="small">Saloon
-                            A</span></p>
-                        <p><i class="fa fa-lg fa-signal"></i> <span class="small">Beginner</span></p>
-                      </div>
-
-                      <div class="col-lg-3 col-md-3 col-sm-10">
-                        <h5>About Tracey Curtis</h5>
-                        <p class="small">Sed non congue nunc. Fusce pulvinar elementum
-                          rhoncus. Duis sit amet metus erat. Sed et ligula mattis, dictum
-                          nisl et, vestibulum urna.</p>
-                        <span class="about-speaker"><i class="fa fa-lg fa-globe"></i> <a class="small" href="#">themecube.net</a></span>
-                      </div>
-
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
-
-              <!-- PROGRAM 9-->
-              <div class="panel panel-default">
-
-                <!-- Program Heading -->
-                <div class="panel-heading" role="tab" id="heading9">
-
-                  <div class="row">
-                    <div class="col-lg-1 col-md-1 col-sm-1">
-                      <p class="date">11.45</p>
-                    </div>
-
-                    <div class="col-lg-11 col-md-11 col-sm-11">
-
-                      <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#Program9" aria-expanded="true"
-                          aria-controls="Program9">
-                          Praesent dapibus semper nisi sit amet hendrerit
-                        </a>
-                      </h4>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div id="Program9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
-                  <!-- Program Content -->
-                  <div class="panel-body">
-                    <div class="row">
-                      <div class="col-lg-2 col-md-2 col-sm-2">
-                        <img class="img-responsive img-circle" src="assets/img/speaker1.png" alt="">
-                      </div>
-
-                      <div class="col-lg-7 col-md-7 col-sm-10">
-                        <p class="speaker-name uppercase">Stanley Willis</p>
-                        <h4>Praesent dapibus semper nisi sit amet hendrerit</h4>
-                        <p>Sed facilisis justo vitae risus viverra vulputate. Mauris vel
-                          ipsum dignissim diam viverra condimentum. Donec sodales, diam
-                          eget mattis condimentum, quam neque tempus purus, dictum
-                          viverra risus nisl quis metus.</p>
-
-                        <p><i class="fa fa-lg fa-clock-o"></i> <span class="small">120mins</span></p>
-                        <p><i class="fa fa-lg fa-map-marker"></i> <span class="small">Saloon
-                            A</span></p>
-                        <p><i class="fa fa-lg fa-signal"></i> <span class="small">Intermediate</span></p>
-                      </div>
-
-                      <div class="col-lg-3 col-md-3 col-sm-10">
-                        <h5>About Stanley Willis</h5>
-                        <p class="small">Sed non congue nunc. Fusce pulvinar elementum
-                          rhoncus. Duis sit amet metus erat. Sed et ligula mattis, dictum
-                          nisl et, vestibulum urna.</p>
-                        <span class="about-speaker"><i class="fa fa-lg fa-globe"></i> <a class="small" href="#">themecube.net</a></span>
-                      </div>
-
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
-
-              <!-- PROGRAM 10-->
-              <div class="panel panel-default">
-
-                <!-- Program Heading -->
-                <div class="panel-heading" role="tab" id="heading10">
-
-                  <div class="row">
-                    <div class="col-lg-1 col-md-1 col-sm-1">
-                      <p class="date">13.45</p>
-                    </div>
-
-                    <div class="col-lg-11 col-md-11 col-sm-11">
-
-                      <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#Program10" aria-expanded="true"
-                          aria-controls="Program10">
-                          Ut posuere ipsum a laoreet
-                        </a>
-                      </h4>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div id="Program10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10">
-                  <!-- Program Content -->
-                  <div class="panel-body">
-                    <div class="row">
-                      <div class="col-lg-2 col-md-2 col-sm-2">
-                        <img class="img-responsive img-circle" src="assets/img/speaker2.png" alt="">
-                      </div>
-
-                      <div class="col-lg-7 col-md-7 col-sm-10">
-                        <p class="speaker-name uppercase">Jane Richards</p>
-                        <h4>Ut posuere ipsum a laoreet</h4>
-                        <p>Sed facilisis justo vitae risus viverra vulputate. Mauris vel
-                          ipsum dignissim diam viverra condimentum. Donec sodales, diam
-                          eget mattis condimentum, quam neque tempus purus, dictum
-                          viverra risus nisl quis metus.</p>
-
-                        <p><i class="fa fa-lg fa-clock-o"></i> <span class="small">60mins</span></p>
-                        <p><i class="fa fa-lg fa-map-marker"></i> <span class="small">Saloon
-                            A</span></p>
-                        <p><i class="fa fa-lg fa-signal"></i> <span class="small">Beinner</span></p>
-                      </div>
-
-                      <div class="col-lg-3 col-md-3 col-sm-10">
-                        <h5>About Jane Richards</h5>
-                        <p class="small">Sed non congue nunc. Fusce pulvinar elementum
-                          rhoncus. Duis sit amet metus erat. Sed et ligula mattis, dictum
-                          nisl et, vestibulum urna.</p>
-                        <span class="about-speaker"><i class="fa fa-lg fa-globe"></i> <a class="small" href="#">themecube.net</a></span>
-                      </div>
-
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
-
             </div>
           </div>
 
-          <!-- DAY 3 -->
-          <div role="tabpanel" class="tab-pane fade in" id="day3" aria-labelledby="day3-tab">
+          <!-- SALA 3 -->
+          <div role="tabpanel" class="tab-pane fade in" id="sala3" aria-labelledby="sala3-tab">
             <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
-
-              <!-- PROGRAM 11-->
-              <div class="panel panel-default">
-
-                <!-- Program Heading -->
-                <div class="panel-heading" role="tab" id="heading11">
-
+              <div class="panel panel-default" *ngFor="let room of this.vm.room3; let i = index">
+                <div class="panel-heading" role="tab" id="{{ room.heading }}">
                   <div class="row">
-                    <div class="col-lg-1 col-md-1 col-sm-1">
-                      <p class="date">08.00</p>
+                    <div class="col-lg-2 col-md-2 col-sm-2">
+                      <p class="date">{{ room.time }}</p>
                     </div>
 
-                    <div class="col-lg-11 col-md-11 col-sm-11">
-
+                    <div class="col-lg-10 col-md-10 col-sm-10">
                       <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#Program11" aria-expanded="true"
-                          aria-controls="Program11">
-                          Mauris rhoncus scelerisque lacus
+                        <a
+                          data-toggle="collapse"
+                          data-parent="#accordion"
+                          href="{{ room.id }}"
+                          aria-expanded="true"
+                        >
+                          {{ room.title }}
                         </a>
                       </h4>
                     </div>
                   </div>
-
                 </div>
 
-                <div id="Program11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
-                  <!-- Program Content -->
+                <div
+                  id="{{ room.idItem }}"
+                  class="panel-collapse collapse"
+                  role="tabpanel"
+                  *ngIf="room.showDetails"
+                >
                   <div class="panel-body">
                     <div class="row">
                       <div class="col-lg-2 col-md-2 col-sm-2">
-                        <img class="img-responsive img-circle" src="assets/img/speaker1.png" alt="">
+                        <img
+                          class="img-responsive img-circle"
+                          src="{{ this.speakers[room.speakerId].img }}"
+                          alt=""
+                        />
                       </div>
 
-                      <div class="col-lg-7 col-md-7 col-sm-10">
-                        <p class="speaker-name uppercase">Stanley Willis</p>
-                        <h4>Mauris rhoncus scelerisque lacus</h4>
-                        <p>Sed facilisis justo vitae risus viverra vulputate. Mauris vel
-                          ipsum dignissim diam viverra condimentum. Donec sodales, diam
-                          eget mattis condimentum, quam neque tempus purus, dictum
-                          viverra risus nisl quis metus.</p>
-
-                        <p><i class="fa fa-lg fa-clock-o"></i> <span class="small">45mins</span></p>
-                        <p><i class="fa fa-lg fa-map-marker"></i> <span class="small">Saloon
-                            A</span></p>
-                        <p><i class="fa fa-lg fa-signal"></i> <span class="small">Beginner</span></p>
+                      <div class="col-lg-10 col-md-10 col-sm-10">
+                        <p class="speaker-name uppercase">
+                          {{ this.speakers[room.speakerId].name }}
+                          <span *ngIf="this.speakers[room.speakerId].linkedin">-</span>
+                          <a
+                            href="{{ this.speakers[room.speakerId].linkedin }}"
+                            *ngIf="this.speakers[room.speakerId].linkedin"
+                          >
+                            <i class="fa fa-lg fa-linkedin-square"></i>
+                            <span class="small">Linkedin</span>
+                          </a>
+                        </p>
+                        <h4>{{ this.speakers[room.speakerId].lecture.title }}</h4>
+                        <p [innerHTML]="this.speakers[room.speakerId].lecture.resume"></p>
+                        <br /><br />
+                        <p>
+                          <i class="fa fa-lg fa-clock-o"></i>&nbsp;&nbsp;
+                          <span class="small">{{
+                            this.speakers[room.speakerId].lecture.duration
+                          }}</span>
+                        </p>
+                        <p>
+                          <i class="fa fa-lg fa-flag"></i>&nbsp;&nbsp;
+                          <span class="small">
+                            {{ this.speakers[room.speakerId].lecture.type }}
+                          </span>
+                        </p>
                       </div>
-
-                      <div class="col-lg-3 col-md-3 col-sm-10">
-                        <h5>About Stanley Willis</h5>
-                        <p class="small">Sed non congue nunc. Fusce pulvinar elementum
-                          rhoncus. Duis sit amet metus erat. Sed et ligula mattis, dictum
-                          nisl et, vestibulum urna.</p>
-                        <span class="about-speaker"><i class="fa fa-lg fa-globe"></i> <a class="small" href="#">themecube.net</a></span>
-                      </div>
-
                     </div>
                   </div>
-
                 </div>
-
               </div>
-
-              <!-- PROGRAM 12-->
-              <div class="panel panel-default">
-
-                <!-- Program Heading -->
-                <div class="panel-heading" role="tab" id="heading12">
-
-                  <div class="row">
-                    <div class="col-lg-1 col-md-1 col-sm-1">
-                      <p class="date">08.45</p>
-                    </div>
-
-                    <div class="col-lg-11 col-md-11 col-sm-11">
-
-                      <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#Program12" aria-expanded="true"
-                          aria-controls="Program12">
-                          Sed porta ex purus ut commodo est facilisis sit amet
-                        </a>
-                      </h4>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div id="Program12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading12">
-                  <!-- Program Content -->
-                  <div class="panel-body">
-                    <div class="row">
-                      <div class="col-lg-2 col-md-2 col-sm-2">
-                        <img class="img-responsive img-circle" src="assets/img/speaker2.png" alt="">
-                      </div>
-
-                      <div class="col-lg-7 col-md-7 col-sm-10">
-                        <p class="speaker-name uppercase">Jane Richards</p>
-                        <h4>Sed porta ex purus, ut commodo est facilisis sit amet</h4>
-                        <p>Sed facilisis justo vitae risus viverra vulputate. Mauris vel
-                          ipsum dignissim diam viverra condimentum. Donec sodales, diam
-                          eget mattis condimentum, quam neque tempus purus, dictum
-                          viverra risus nisl quis metus.</p>
-
-                        <p><i class="fa fa-lg fa-clock-o"></i> <span class="small">45mins</span></p>
-                        <p><i class="fa fa-lg fa-map-marker"></i> <span class="small">Saloon
-                            A</span></p>
-                        <p><i class="fa fa-lg fa-signal"></i> <span class="small">Beginner</span></p>
-                      </div>
-
-                      <div class="col-lg-3 col-md-3 col-sm-10">
-                        <h5>About Jane Richards</h5>
-                        <p class="small">Sed non congue nunc. Fusce pulvinar elementum
-                          rhoncus. Duis sit amet metus erat. Sed et ligula mattis, dictum
-                          nisl et, vestibulum urna.</p>
-                        <span class="about-speaker"><i class="fa fa-lg fa-globe"></i> <a class="small" href="#">themecube.net</a></span>
-                      </div>
-
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
-
-              <!-- PROGRAM 13-->
-              <div class="panel panel-default">
-
-                <!-- Program Heading -->
-                <div class="panel-heading" role="tab" id="heading13">
-
-                  <div class="row">
-                    <div class="col-lg-1 col-md-1 col-sm-1">
-                      <p class="date">09.30</p>
-                    </div>
-
-                    <div class="col-lg-11 col-md-11 col-sm-11">
-
-                      <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#Program13" aria-expanded="true"
-                          aria-controls="Program13">
-                          Phasellus tellus libero placerat quis amet
-                        </a>
-                      </h4>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div id="Program13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading13">
-                  <!-- Program Content -->
-                  <div class="panel-body">
-                    <div class="row">
-                      <div class="col-lg-2 col-md-2 col-sm-2">
-                        <img class="img-responsive img-circle" src="assets/img/speaker3.png" alt="">
-                      </div>
-
-                      <div class="col-lg-7 col-md-7 col-sm-10">
-                        <p class="speaker-name uppercase">Martin Pearson</p>
-                        <h4>Phasellus tellus libero, placerat quis amet</h4>
-                        <p>Sed facilisis justo vitae risus viverra vulputate. Mauris vel
-                          ipsum dignissim diam viverra condimentum. Donec sodales, diam
-                          eget mattis condimentum, quam neque tempus purus, dictum
-                          viverra risus nisl quis metus.</p>
-
-                        <p><i class="fa fa-lg fa-clock-o"></i> <span class="small">45mins</span></p>
-                        <p><i class="fa fa-lg fa-map-marker"></i> <span class="small">Saloon
-                            A</span></p>
-                        <p><i class="fa fa-lg fa-signal"></i> <span class="small">Beginner</span></p>
-                      </div>
-
-                      <div class="col-lg-3 col-md-3 col-sm-10">
-                        <h5>About Martin Pearson</h5>
-                        <p class="small">Sed non congue nunc. Fusce pulvinar elementum
-                          rhoncus. Duis sit amet metus erat. Sed et ligula mattis, dictum
-                          nisl et, vestibulum urna.</p>
-                        <span class="about-speaker"><i class="fa fa-lg fa-globe"></i> <a class="small" href="#">themecube.net</a></span>
-                      </div>
-
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
-
-              <!-- PROGRAM 14-->
-              <div class="panel panel-default">
-
-                <!-- Program Heading -->
-                <div class="panel-heading" role="tab" id="heading14">
-
-                  <div class="row">
-                    <div class="col-lg-1 col-md-1 col-sm-1">
-                      <p class="date">10.30</p>
-                    </div>
-
-                    <div class="col-lg-11 col-md-11 col-sm-11">
-
-                      <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#Program14" aria-expanded="true"
-                          aria-controls="Program14">
-                          Proin et augue massa
-                        </a>
-                      </h4>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div id="Program14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading14">
-                  <!-- Program Content -->
-                  <div class="panel-body">
-                    <div class="row">
-                      <div class="col-lg-2 col-md-2 col-sm-2">
-                        <img class="img-responsive img-circle" src="assets/img/speaker4.png" alt="">
-                      </div>
-
-                      <div class="col-lg-7 col-md-7 col-sm-10">
-                        <p class="speaker-name uppercase">Jessica Green</p>
-                        <h4>Proin et augue massa</h4>
-                        <p>Sed facilisis justo vitae risus viverra vulputate. Mauris vel
-                          ipsum dignissim diam viverra condimentum. Donec sodales, diam
-                          eget mattis condimentum, quam neque tempus purus, dictum
-                          viverra risus nisl quis metus.</p>
-
-                        <p><i class="fa fa-lg fa-clock-o"></i> <span class="small">120mins</span></p>
-                        <p><i class="fa fa-lg fa-map-marker"></i> <span class="small">Saloon
-                            A</span></p>
-                        <p><i class="fa fa-lg fa-signal"></i> <span class="small">Intermediate</span></p>
-                      </div>
-
-                      <div class="col-lg-3 col-md-3 col-sm-10">
-                        <h5>About Jessica Green</h5>
-                        <p class="small">Sed non congue nunc. Fusce pulvinar elementum
-                          rhoncus. Duis sit amet metus erat. Sed et ligula mattis, dictum
-                          nisl et, vestibulum urna.</p>
-                        <span class="about-speaker"><i class="fa fa-lg fa-globe"></i> <a class="small" href="#">themecube.net</a></span>
-                      </div>
-
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
-
-              <!-- PROGRAM 15-->
-              <div class="panel panel-default">
-
-                <!-- Program Heading -->
-                <div class="panel-heading" role="tab" id="heading15">
-
-                  <div class="row">
-                    <div class="col-lg-1 col-md-1 col-sm-1">
-                      <p class="date">12.30</p>
-                    </div>
-
-                    <div class="col-lg-11 col-md-11 col-sm-11">
-
-                      <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#Program15" aria-expanded="true"
-                          aria-controls="Program15">
-                          Maecenas efficitur justo sed accumsan rhoncus
-                        </a>
-                      </h4>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div id="Program15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading15">
-                  <!-- Program Content -->
-                  <div class="panel-body">
-                    <div class="row">
-                      <div class="col-lg-2 col-md-2 col-sm-2">
-                        <img class="img-responsive img-circle" src="assets/img/speaker5.png" alt="">
-                      </div>
-
-                      <div class="col-lg-7 col-md-7 col-sm-10">
-                        <p class="speaker-name uppercase">Herman Russell</p>
-                        <h4>Maecenas efficitur justo sed accumsan rhoncus</h4>
-                        <p>Sed facilisis justo vitae risus viverra vulputate. Mauris vel
-                          ipsum dignissim diam viverra condimentum. Donec sodales, diam
-                          eget mattis condimentum, quam neque tempus purus, dictum
-                          viverra risus nisl quis metus.</p>
-
-                        <p><i class="fa fa-lg fa-clock-o"></i> <span class="small">60mins</span></p>
-                        <p><i class="fa fa-lg fa-map-marker"></i> <span class="small">Saloon
-                            A</span></p>
-                        <p><i class="fa fa-lg fa-signal"></i> <span class="small">Intermediate</span></p>
-                      </div>
-
-                      <div class="col-lg-3 col-md-3 col-sm-10">
-                        <h5>About Herman Russell</h5>
-                        <p class="small">Sed non congue nunc. Fusce pulvinar elementum
-                          rhoncus. Duis sit amet metus erat. Sed et ligula mattis, dictum
-                          nisl et, vestibulum urna.</p>
-                        <span class="about-speaker"><i class="fa fa-lg fa-globe"></i> <a class="small" href="#">themecube.net</a></span>
-                      </div>
-
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
-
             </div>
           </div>
-
         </div>
-
       </div>
-
     </div>
   </div>
 </section>

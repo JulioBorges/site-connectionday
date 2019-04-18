@@ -1,0 +1,371 @@
+{
+  "title": "Programação",
+  "subtitle": "Verifique aqui a nossa programação e se organize para assistir as palestras no Connection Day.",
+  "room1": [
+    {
+      "idItem": "Program1",
+      "id": "",
+      "heading": "heading1",
+      "title": "Credenciamento",
+      "time": "08:00 - 09:00",
+      "showDetails": false
+    },
+    {
+      "idItem": "Program2",
+      "id": "",
+      "heading": "heading2",
+      "title": "Abertura do evento",
+      "time": "09:00 - 09:10",
+      "showDetails": false
+    },
+    {
+      "idItem": "Program3",
+      "id": "#Program3",
+      "heading": "heading3",
+      "title": "Alexandre Melo - Os segredos do Marketing de diferenciação",
+      "time": "09:10 - 09:55",
+      "showDetails": true,
+      "speakerId": 0
+    },
+    {
+      "idItem": "Program3",
+      "id": "",
+      "heading": "heading3",
+      "title": "Coffee Break",
+      "time": "09:55 - 10:25",
+      "showDetails": false
+    },
+    {
+      "idItem": "Program4",
+      "id": "#Program4",
+      "heading": "heading4",
+      "title": "Louize Oliveira - Transformação Digital nas organizações",
+      "time": "09:25 - 11:10",
+      "showDetails": true,
+      "speakerId": 10
+    },
+    {
+      "idItem": "Program5",
+      "id": "#Program5",
+      "heading": "heading5",
+      "title": "Wharley Ornelas - Next js, a maneira mais fácil de começar um projeto React",
+      "time": "11:10 - 11:55",
+      "showDetails": true,
+      "speakerId": 19
+    },
+    {
+      "idItem": "Program6",
+      "id": "",
+      "heading": "heading6",
+      "title": "Parada para o almoço",
+      "time": "11:55 - 13:25",
+      "showDetails": false,
+      "speakerId": 0
+    },
+    {
+      "idItem": "Program7",
+      "id": "#Program7",
+      "heading": "heading7",
+      "title": "Rayane Silveira - Sistema Toyota de produção - TPS",
+      "time": "13:25 - 14:10",
+      "showDetails": true,
+      "speakerId": 15
+    },
+    {
+      "idItem": "Program8",
+      "id": "#Program8",
+      "heading": "heading8",
+      "title": "Antônio Maniero - A péssima prática de seguir boas práticas",
+      "time": "14:10 - 14:55",
+      "showDetails": true,
+      "speakerId": 2
+    },
+    {
+      "idItem": "Program9",
+      "id": "#Program9",
+      "heading": "heading9",
+      "title": "Hugo Iuri - Como automatizar seu primeiro deploy com Docker",
+      "time": "14:55 - 15:40",
+      "showDetails": true,
+      "speakerId": 8
+    },
+    {
+      "idItem": "Program10",
+      "id": "",
+      "heading": "heading10",
+      "title": "Coffee Break",
+      "time": "15:40 - 16:10",
+      "showDetails": false
+    },
+    {
+      "idItem": "Program11",
+      "id": "#Program11",
+      "heading": "heading11",
+      "title": "Leonardo Baltar - Utilizando o LinkedIn de forma estratégica para conseguir um emprego ou nova oportunidade de negócio",
+      "time": "16:10 - 16:55",
+      "showDetails": true,
+      "speakerId": 9
+    },
+    {
+      "idItem": "Program12",
+      "id": "#Program12",
+      "heading": "heading12",
+      "title": "Cleiton Rodrigues - Os desafios de um super-herói na épica luta contra o desemprego",
+      "time": "16:55 - 17:40",
+      "showDetails": true,
+      "speakerId": 5
+    },
+    {
+      "idItem": "Program13",
+      "id": "",
+      "heading": "heading13",
+      "title": "Encerramento e sorteio de brindes",
+      "time": "17:40 - 18:10",
+      "showDetails": false,
+      "speakerId": 0
+    }
+  ],
+  "room2": [
+    {
+      "idItem": "Program21",
+      "id": "",
+      "heading": "heading21",
+      "title": "[Sala Fechada] - Credenciamento",
+      "time": "08:00 - 09:00",
+      "showDetails": false
+    },
+    {
+      "idItem": "Program22",
+      "id": "",
+      "heading": "heading22",
+      "title": "[Sala Fechada] - Abertura do evento",
+      "time": "09:00 - 09:10",
+      "showDetails": false
+    },
+    {
+      "idItem": "Program23",
+      "id": "",
+      "heading": "heading23",
+      "title": "[Sala Fechada] - Palestra de abertura",
+      "time": "09:10 - 09:55",
+      "showDetails": false,
+      "speakerId": 0
+    },
+    {
+      "idItem": "Program24",
+      "id": "",
+      "heading": "heading24",
+      "title": "Coffee Break",
+      "time": "09:55 - 10:25",
+      "showDetails": false
+    },
+    {
+      "idItem": "Program25",
+      "id": "#Program25",
+      "heading": "heading25",
+      "title": "Vinícius Soares - O futuro é o trabalho remoto",
+      "time": "09:25 - 11:10",
+      "showDetails": true,
+      "speakerId": 18
+    },
+    {
+      "idItem": "Program26",
+      "id": "#Program26",
+      "heading": "heading26",
+      "title": "Ariadna Nunes - Autoconhecimento e inovação",
+      "time": "11:10 - 11:55",
+      "showDetails": true,
+      "speakerId": 3
+    },
+    {
+      "idItem": "Program27",
+      "id": "",
+      "heading": "heading27",
+      "title": "Parada para o almoço",
+      "time": "11:55 - 13:25",
+      "showDetails": false,
+      "speakerId": 0
+    },
+    {
+      "idItem": "Program28",
+      "id": "#Program28",
+      "heading": "heading28",
+      "title": "Erika Salatiel - Como ser um talento digital no mercado de inovação",
+      "time": "13:25 - 14:10",
+      "showDetails": true,
+      "speakerId": 6
+    },
+    {
+      "idItem": "Program29",
+      "id": "#Program29",
+      "heading": "heading29",
+      "title": "Gladis Azevedo - Bioinformática, uma visão geral",
+      "time": "14:10 - 14:55",
+      "showDetails": true,
+      "speakerId": 7
+    },
+    {
+      "idItem": "Program30",
+      "id": "#Program30",
+      "heading": "heading30",
+      "title": "Pedro Barboza - Criatividade e animação",
+      "time": "14:55 - 15:40",
+      "showDetails": true,
+      "speakerId": 12
+    },
+    {
+      "idItem": "Program31",
+      "id": "",
+      "heading": "heading31",
+      "title": "Coffee Break",
+      "time": "15:40 - 16:10",
+      "showDetails": false
+    },
+    {
+      "idItem": "Program32",
+      "id": "#Program32",
+      "heading": "heading32",
+      "title": "Piero Brustin - O impacto da Realidade Virtual e Realidade Aumentada nos negócios.",
+      "time": "16:10 - 16:55",
+      "showDetails": true,
+      "speakerId": 14
+    },
+    {
+      "idItem": "Program33",
+      "id": "#Program33",
+      "heading": "heading33",
+      "title": "[Sala Fechada] - Palestra de fechamento",
+      "time": "16:55 - 17:40",
+      "showDetails": false
+    },
+    {
+      "idItem": "Program34",
+      "id": "",
+      "heading": "heading34",
+      "title": "[Sala Fechada] - Encerramento e sorteio de brindes",
+      "time": "17:40 - 18:10",
+      "showDetails": false
+    }
+  ],
+  "room3": [
+    {
+      "idItem": "Program35",
+      "id": "",
+      "heading": "heading35",
+      "title": "[Sala Fechada] - Credenciamento",
+      "time": "08:00 - 09:00",
+      "showDetails": false
+    },
+    {
+      "idItem": "Program36",
+      "id": "",
+      "heading": "heading36",
+      "title": "[Sala Fechada] - Abertura do evento",
+      "time": "09:00 - 09:10",
+      "showDetails": false
+    },
+    {
+      "idItem": "Program37",
+      "id": "",
+      "heading": "heading37",
+      "title": "[Sala Fechada] - Palestra de abertura",
+      "time": "09:10 - 09:55",
+      "showDetails": false,
+      "speakerId": 0
+    },
+    {
+      "idItem": "Program38",
+      "id": "",
+      "heading": "heading38",
+      "title": "Coffee Break",
+      "time": "09:55 - 10:25",
+      "showDetails": false
+    },
+    {
+      "idItem": "Program39",
+      "id": "#Program39",
+      "heading": "heading39",
+      "title": "Maria Vitória Pereira - Mulheres na robótica",
+      "time": "09:25 - 11:10",
+      "showDetails": true,
+      "speakerId": 11
+    },
+    {
+      "idItem": "Program40",
+      "id": "#Program40",
+      "heading": "heading40",
+      "title": "Bianca Theodoro - Indústria 4.0",
+      "time": "11:10 - 11:55",
+      "showDetails": true,
+      "speakerId": 4
+    },
+    {
+      "idItem": "Program41",
+      "id": "",
+      "heading": "heading41",
+      "title": "Parada para o almoço",
+      "time": "11:55 - 13:25",
+      "showDetails": false
+    },
+    {
+      "idItem": "Program42",
+      "id": "#Program42",
+      "heading": "heading42",
+      "title": "Ruan Coelho - Tecnologia wireless e a Internet das Coisas",
+      "time": "13:25 - 14:10",
+      "showDetails": true,
+      "speakerId": 17
+    },
+    {
+      "idItem": "Program43",
+      "id": "#Program43",
+      "heading": "heading43",
+      "title": "Rodrigo Rennó - Você é um profissional \"pato\"? Se não é, pense seriamente em fazer \"quack\"",
+      "time": "14:10 - 14:55",
+      "showDetails": true,
+      "speakerId": 16
+    },
+    {
+      "idItem": "Program44",
+      "id": "#Program44",
+      "heading": "heading44",
+      "title": "Pedro Henrique Nunes - Tecnologia assistiva: uma área em ascensão",
+      "time": "14:55 - 15:40",
+      "showDetails": true,
+      "speakerId": 13
+    },
+    {
+      "idItem": "Program45",
+      "id": "",
+      "heading": "heading45",
+      "title": "Coffee Break",
+      "time": "15:40 - 16:10",
+      "showDetails": false
+    },
+    {
+      "idItem": "Program46",
+      "id": "#Program46",
+      "heading": "heading46",
+      "title": "André Paulovich - Estratégias de desenvolvimento de software para turbinar a transformação digital",
+      "time": "16:10 - 16:55",
+      "showDetails": true,
+      "speakerId": 1
+    },
+    {
+      "idItem": "Program47",
+      "id": "",
+      "heading": "heading47",
+      "title": "[Sala Fechada] - Palestra de fechamento",
+      "time": "16:55 - 17:40",
+      "showDetails": false
+    },
+    {
+      "idItem": "Program48",
+      "id": "",
+      "heading": "heading48",
+      "title": "[Sala Fechada] - Encerramento e sorteio de brindes",
+      "time": "17:40 - 18:10",
+      "showDetails": false
+    }
+  ]
+}

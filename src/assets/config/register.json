@@ -1,29 +1,29 @@
 {
-    "tickets": [
-        {
-            "description": "Lote 1",
-            "price": "R$ 50,00",
-            "line1": "Kit do evento",
-            "line2": "Coffee break",
-            "line3": "Todas as palestras",
-            "line4": "Até 28/03/2019"
-        },
-        {
-            "description": "Lote 2",
-            "price": "R$ 65,00",
-            "line1": "Kit do evento",
-            "line2": "Coffee break",
-            "line3": "Todas as palestras",
-            "line4": "Até 30/04/2019"
-        },
-        {
-            "description": "Lote 3",
-            "price": "R$ 80,00",
-            "line1": "Kit do evento",
-            "line2": "Coffee break",
-            "line3": "Todas as palestras",
-            "line4": "De 29/03/19 até 30/04/19"
-        }
-    ],
-    "urlEvent": "https://www.sympla.com.br/connection-day-2019__446402"
+  "tickets": [
+    {
+      "description": "Lote 1",
+      "price": "---",
+      "line1": "Kit do evento",
+      "line2": "Coffee break",
+      "line3": "Todas as palestras",
+      "line4": "Até 28/03/2019"
+    },
+    {
+      "description": "Lote 2",
+      "price": "R$ 65,00",
+      "line1": "Kit do evento",
+      "line2": "Coffee break",
+      "line3": "Todas as palestras",
+      "line4": "Até 30/04/2019"
+    },
+    {
+      "description": "Lote 3",
+      "price": "R$ 80,00",
+      "line1": "Kit do evento",
+      "line2": "Coffee break",
+      "line3": "Todas as palestras",
+      "line4": "De 30/04/19 até 03/05/19"
+    }
+  ],
+  "urlEvent": "https://www.sympla.com.br/connection-day-2019__446402"
 }

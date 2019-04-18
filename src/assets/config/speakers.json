@@ -1,13 +1,286 @@
 {
-    "title": "Palestrantes convidados",
-    "subtitle": "Conheça nossos incríveis palestrantes convidados",
-    "speakers": [
-        {
-            "name": "Alexandre Melo",
-            "img": "assets/img/speakers/alexandre.jpg",
-            "company": "Instituto Engenharia da Venda",
-            "role": "CEO no",
-            "presentation": "<p>CEO no instituto engenharia da venda, é o criador de várias iniciativas...</p>"
-        }
-    ]
+  "title": "Palestrantes convidados",
+  "subtitle": "Conheça nossos incríveis palestrantes convidados",
+  "speakers": [
+    {
+      "id": 0,
+      "name": "Alexandre Melo",
+      "img": "assets/img/speakers/alexandre.jpg",
+      "role": " CEO no Instituto Engenharia da Venda",
+      "presentation": "<br/><br/><p>CEO no instituto engenharia da venda, é o criador de várias iniciativas e treinamentos voltados ao mercado de vendas e também à carreira e crescimento pessoal.</p>",
+      "link": "http://engenhariadavenda.com.br/",
+      "linkedin": "https://www.linkedin.com/in/palestrante-alexandre-melo-272279103/",
+      "lecture": {
+        "title": "Os segredos do Marketing de diferenciação",
+        "resume": "Nesta palestra Alexandre Melo, expõe os conceitos do marketing de diferenciação e traz para a realidade dos participantes o quanto esta nova forma de marketing pode lhe auxiliar tanto na sua empresa como em sua carreira pessoal.",
+        "type": "Carreira",
+        "duration": "45mins"
+      }
+    },
+    {
+      "id": 1,
+      "name": "André Paulovich",
+      "img": "assets/img/speakers/andre.jpg",
+      "role": "Arquiteto de sistemas na CI&T<br/><br/>",
+      "presentation": "<p>André é apaixonado por tecnologia e se considera um eterno estudante. Trabalha como arquiteto de sistemas na CI&T. <br/><br/>Formado em Comunicação Digital (UniBH), pós graduado em Arquitetura de Sistemas (PUC-MG). <br/><br/>MVP Asp.Net/IIS nos períodos 2011/2012, 2012/2013 e 2013/2014. <br/><br/>Certificado Microsoft como MCSD.Net, MCAD, MCTS, MCT e MCP. <br/><br/>Há mais de uma década desenvolvendo soluções de tecnologia para grandes empresas líderes em seus segmentos.</p>",
+      "linkedin": "https://www.linkedin.com/in/andrepaulovich/",
+      "lecture": {
+        "title": "Estratégias de desenvolvimento de software para turbinar a transformação digital",
+        "resume": "Num processo de transformação digital, a tecnologia precisa ser suporte para uma nova forma de pensar e desenvolver negócios digitais. Vamos discutir algumas estratégias e práticas que podem ajudá-lo a superar os desafios de trazer agilidade e uma cultura de experimentação em times de alta performance.",
+        "type": "Tecnologia",
+        "duration": "45mins"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Antonio Maniero",
+      "img": "assets/img/speakers/maniero.jpg",
+      "role": "Community manager no StackOverflow/MVP Microsoft",
+      "presentation": "<br/><br/><p>Antonio Maniero é Bacharel em Análise de Sistemas pela Universidade Metodista de Piracicaba. <br/><br/>Mente de engenheiro desde que nasceu atua a 35 anos se divertindo escovando bits e brincando com linguagens de programação e compiladores. Programador raiz se tornou Microsoft Most Valueable Professional e líder no Stack Overflow em Português.<br/><br/>Generalista em desenvolvimento de software, consultor independente na Jumbo Tecnologia e ainda especialista em ERPs e professor nas horas vagas.</p>",
+      "linkedin": "https://www.linkedin.com/in/maniero/",
+      "lecture": {
+        "title": "A péssima prática de seguir boas práticas",
+        "resume": "Ninguém contesta que \"melhores práticas\" são ferramentas importantes para todo desenvolvedor. Mas sem saber usá-las adequadamente o resultado pode ser ruim ou mesmo se tornar má prática. Junte-se em uma apresentação mostrando como usá-las de forma adequada e produtiva. Será apresentado o motivo de assumirmos que uma prática popular é sempre bom para nós, mesmo que não seja o nosso caso de uso. Veja alguns exemplos concretos da nossa indústria onde erramos no uso das melhores práticas e o que precisamos mudar.",
+        "type": "Tecnologia",
+        "duration": "45mins"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Ariadna Nunes",
+      "img": "assets/img/speakers/ariadna.jpg",
+      "role": "Advogada<br/><br/>",
+      "presentation": "<p>Advogada por profissão e apaixonada por desenvolvimento pessoal e de novas competências. <br/><br/>Foi uma das 16 jovens selecionadas para participar do 1º Laboratório de Inovação promovidos pelo Sicoob Divicred em Divinópolis e mais recentemente participou também do “walk the talk”, laboratório de inovação promovido pela Eureca em São Paulo, no qual o projeto de sua equipe foi destaque.</p>",
+      "linkedin": "https://www.linkedin.com/in/ariadna-nunes-507068157/",
+      "lecture": {
+        "title": "Autoconhecimento e inovação",
+        "resume": "Nesta palestra Ariadna utiliza toda sua experiência para mostrar ao público como estamos preparando a geração atual para os fatores que causarão impacto direto no mercado de trabalho nos próximos anos?",
+        "type": "Carreira",
+        "duration": "45mins"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Bianca Theodoro",
+      "img": "assets/img/speakers/bianca.jpg",
+      "role": "Formanda em Engenheira Mecatrônica",
+      "presentation": "<br/><br/><p>Formanda em engenharia mecatrônica pelo CEFET-MG.</p>",
+      "linkedin": "https://www.linkedin.com/in/biancatheodorofranca/",
+      "lecture": {
+        "title": "Indústria 4.0",
+        "resume": "Entenda os impactos da indústria 4.0 no ambiente tecnológico e como você deve se preparar para as novas oportunidades oriundas desta nova revolução industrial.",
+        "type": "Carreira/Tecnologia",
+        "duration": "45mins"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Cleiton Rodrigues",
+      "img": "assets/img/speakers/cleiton.jpg",
+      "role": "Fundador na Startup CreScER<br/><br/>",
+      "presentation": "<p>Engenheiro de produção, mestrando em educação tecnológica, professor, palestrante e consultor organizacional. <br/><br/>1º lugar desafio SICOOB Centro - oeste de Inovação 2018. <br/><br/>Vencedor do 27º Prêmio Arcelor Mittal de Inovação/Meio Ambiente 2018. <br/><br/>Medalha Cientista de Aço Arcelor Mittal 2018. <br/><br/>Idealizador da startup CreScER.</p>",
+      "linkedin": "https://www.linkedin.com/in/cleiton-rodrigues-52823b5a/",
+      "lecture": {
+        "title": "Os desafios de um super-herói na épica luta contra o desemprego",
+        "resume": "Qual é o caminho para se destacar no mundo corporativo? Imagina se alguns Super heróis, como Tony Stark e Capitão Rogers estivessem em sua cidade lutando para conseguir ganhar dinheiro. <br/><br/>Uma palestra muito diferente, engraçada e totalmente dinâmica.",
+        "type": "Carreira",
+        "duration": "45mins"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Erika Salatiel",
+      "img": "assets/img/speakers/erika.jpg",
+      "role": "Impulsionadora de Talentos Digitais",
+      "presentation": "<br/><br/><p>Psicóloga com especialização em Administração de Empresas pela FGV.<br/><br/>RHtech com expertise em Inovação e 10 anos de experiência em Recrutamento e Seleção de profissionais de TI em multinacional de tecnologia e startups.</p>",
+      "linkedin": "https://www.linkedin.com/in/erika-salatiel-9b43b128/",
+      "lecture": {
+        "title": "Como ser um talento digital no mercado de inovação",
+        "resume": "A palestra tem como objetivo refletir sobre a transformação do perfil profissional com a chegada da tecnologia.<br/>Foco no cliente, paixão por aprender, colaboração, tomar decisões com base em dados, gestão de mudança, são algumas das competências que dominam o mercado de inovação. <br/><br/>Por que essas aptidões são importantes? Neste novo contexto de mercado, vamos falar dos TALENTOS DIGITAIS, com características voltadas para essa necessidade de <strong><em>“mudar o mundo”</em></strong/>.",
+        "type": "Carreira/Tecnologia",
+        "duration": "45mins"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Gladis Azevedo",
+      "img": "assets/img/speakers/gladis.jpg",
+      "role": "Analista de sistemas no Grupo SYM",
+      "presentation": "<br/><br/><p>Analista de sistemas (Grupo SYM) e Professora (Faculdade Pitágoras). Mestranda em Tecnologias Aplicadas à Saúde(Faculdade Promove), especialista em Teste de Software(UNIEURO) e graduada em Sistemas de Informação(FADOM).<br/><br/>Gosta de desafios, valoriza o trabalho em equipe e apaixonada por metodologias inovadoras.</p>",
+      "linkedin": "https://www.linkedin.com/in/gladis-azevedo-a627a35a/",
+      "lecture": {
+        "title": "Bioinformática, uma visão geral",
+        "resume": "Nesta palestra Gladis nos apresenta conceitos básicos de bioinformática e suas principais aplicações. Como a  bioinformática afeta o nosso cotidiano. O que faz um bioinformata, quais devem ser suas habilidades e em que áreas este profissional pode atuar.",
+        "type": "Tecnologia",
+        "duration": "45mins"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Hugo Iuri",
+      "img": "assets/img/speakers/hugo.jpg",
+      "role": "Arquiteto de Softwares na Minutrade",
+      "presentation": "<br/><br/><p>Com cerca de 15 anos de experiência em desenvolvimento, Hugo atualmente é Arquiteto de Softwares na Minutrade. <br/><br/>É um entusiasta da comunidade de desenvolvimento e participa ativamente como organizador das comunidades Node.js e Docker de Belo Horizonte.</p>",
+      "linkedin": "https://www.linkedin.com/in/hugoiuri/",
+      "lecture": {
+        "title": "Como automatizar seu primeiro deploy com Docker",
+        "resume": "O processo de deploy dos softwares, quando executados de forma manual, alem de não trazer segurança ao processo geralmente ocupa muito tempo da equipe de operações. Nesta palestra vamos abordar uma forma simples de operacionalizar entrega continua de uma aplicação feita em Node.js em um ambiente Docker.",
+        "type": "Tecnologia",
+        "duration": "45mins"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Leonardo Baltar",
+      "img": "assets/img/speakers/leonardo.jpg",
+      "role": "Consultor sobre redes sociais <br/><br/>",
+      "presentation": "<p>Oferece consultoria e treinamento em redes sociais.<br/><br/>Formado em Marketing, especializado em Marketing Digital.<br/><br/>Empreendedor, empresário e fundador da Rede Social de Sucesso, empresa referência no triângulo mineiro para a construção de autoridade na internet.<br/><br/>Mais de 20 anos de experiência nas áreas de publicidade e marketing.</p>",
+      "linkedin": "https://www.linkedin.com/in/leonardobaltar/",
+      "lecture": {
+        "title": "Utilizando o LinkedIn de forma estratégica para conseguir um emprego ou nova oportunidade de negócio",
+        "resume": "É bem provável que você já tenha uma conta no LinkedIn. E que o seu currículo também esteja lá. Mas talvez o que você não saiba é que o LinkedIn é muito mais que um simples site de currículos online. Venha aprender como utilizar o LinkedIn de forma estratégica, para conseguir um novo emprego ou efetivar negócios. Saiba como desenvolver sua autoridade digital para se destacar no mercado de trabalho e como construir sua marca pessoal para fechar negócios.",
+        "type": "Carreira",
+        "duration": "45mins"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Louize Oliveira",
+      "img": "assets/img/speakers/louize.jpg",
+      "role": "Consultora na 08 Transformação Digital",
+      "presentation": "<br/><br/><p>Avdvogada, especialista em Direito Empresarial. Vencedora do Hackathon Sicoob Lab 2017. Valuable Young Leader 2017. <br/><br/>Delegada Brasileira na Assembleia Mundial da Juventude 2018. <br/><br/>Idealizadora da Plataforma de Inovação EVOA em Divinópolis-MG. <br/><br/>Uma jovem empreendedora que acredita na liderança jovem e na sua contribuição para organizações sustentáveis e conscientes.</p>",
+      "linkedin": "https://www.linkedin.com/in/louize-oliveira-534ab0a9/",
+      "lecture": {
+        "title": "Transformação digital nas organizações",
+        "resume": "Nesta palestra Louize apresenta uma abordagem sobre o processo de transformação digital dentro de uma organização corporativa, perpassando pelas lideranças, cultura e tecnologia. <br/><br/>Como garantir um processo de transformação digital que aconteça de dentro pra fora?<br/> Confira nesta incrível palestra.",
+        "type": "Carreira/Tecnologia",
+        "duration": "45mins"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Maria Vitória Pereira",
+      "img": "assets/img/speakers/maria_vitoria.jpg",
+      "role": "Estudante<br/><br/>",
+      "presentation": "<p>Técnica em Informática pelo CEFET-MG. Cursando o nono período de Engenharia Mecatrônica no CEFET-MG</p>",
+      "linkedin": "https://www.linkedin.com/in/maria-vit%C3%B3ria-pereira-vaz-70a4b7177/",
+      "lecture": {
+        "title": "Mulheres na robótica",
+        "resume": "Nesta palestra serão citadas personalidades femininas da área seja na atualidade e do passado. Estatísticas interessantes sobre o tema. Trajetória  pessoal e dificuldades encontradas em ambientes \"dominados pelos homens\". A idéia central é quebrar o antigo tabu: robótica coisa de homem.",
+        "type": "Tecnologia",
+        "duration": "45mins"
+      }
+    },
+    {
+      "id": 12,
+      "name": "Pedro Barboza",
+      "img": "assets/img/speakers/pedro_barboza.jpg",
+      "role": "Diretor de Criação/Designer na Serafine",
+      "presentation": "<br/><br/><p>Diretor de Criação/Designer de uma das marcas que mais cresce em franquias de Minas Gerais, a Serafine!<br/><br/>A marca com pouco mais de 3 anos já alcançou 32 franquias. Também é fundador da Abóbora Filmes, onde desenvolve comerciais em \"Motion Graphics\" para empresas como Sicoob Ascicred, Ascipam (Associação Empresarial de Pará de Minas), Unimed e Fapam (Faculdade de Pará de Minas). Trabalhou como Diretor de Arte e Redator durante 4 anos na Agência Publique. Fundou também a Design Plus, onde desenvolveu dezenas de websites em Flash para empresas regionais. Foi mentor na primeira Startup Weekend de Pará de Minas e no Desafio de Inovação Sicoob Centro-Oeste.</p>",
+      "linkedin": "https://www.linkedin.com/in/pedro-barboza-b4074b163/",
+      "lecture": {
+        "title": "Criatividade e Animação",
+        "resume": "Ao contrário do que muitos pensam, criatividade não é para poucos. Mas são poucos os que têm coragem de expor suas ideias. Se não fosse pelo medo de errar, seriamos muito mais criativos. <br/><br/>E em tempos onde conseguir a atenção das pessoas nas redes sociais está cada vez mais difícil, irei falar sobre o crescimento do “motion graphics” (animações 2D). Convido a participar dessa palestra onde vou expor minhas ideias sem medo de errar.  Então bora provar que podemos ser criativos?!",
+        "type": "Carreira",
+        "duration": "45mins"
+      }
+    },
+    {
+      "id": 13,
+      "name": "Pedro Henrique Nunes",
+      "img": "assets/img/speakers/pedro_henrique.jpg",
+      "role": "Graduando em Engenharia Mecatrônica",
+      "presentation": "<br/><br/><p>Graduando Engenharia Mecatrônica no Centro Federal de Educação Tecnológica de Minas Gerais e estagiário voluntário como desenvolvedor de novos produtos para deficientes.<br/><br/>Acredita que a tecnologia ainda pode contribuir e muito não só para o desenvolvimento da economia, como para o desenvolvimento de pessoas.</p>",
+      "lecture": {
+        "title": "Tecnologia assistiva: uma área em ascensão",
+        "resume": "Calçadas sem rampas, escolas sem tradutores de libras, instrumentos adaptadas de alto custo, entre outros. <br/>Problemas que podem ser sanados com a ajuda de soluções que auxiliam o deficiente - e muitas vezes de maneira simples. Tecnologias assistivas: uma nova realidade. ",
+        "type": "Carreira",
+        "duration": "45mins"
+      }
+    },
+    {
+      "id": 14,
+      "name": "Piero Brustin",
+      "img": "assets/img/speakers/piero.jpg",
+      "role": "Diretor na Brustin Creative<br/><br/>",
+      "presentation": "<p>Especialista em marketing digital com 20 anos de experiência. Diretor de Inovação e tecnologia do Instituto Vitaltec de Educação e Pesquisa. Diretor da Brustin Creative. CEO da Startup Visite Fácil. Consultor do Sebrae MG na área de serviços digitais. </p>",
+      "linkedin": "https://www.linkedin.com/in/piero-brustin-1348b021/",
+      "lecture": {
+        "title": "O impacto da Realidade Virtual e Realidade Aumentada nos negócios.",
+        "resume": "Nesta palestra Piero demonstra o real impacto de novas tecnologias como a realidade virtual e a realidade aumentada nos negócios.",
+        "type": "Carreira/Tecnologia",
+        "duration": "45mins"
+      }
+    },
+    {
+      "id": 15,
+      "name": "Rayane Silveira",
+      "img": "assets/img/speakers/rayane.jpg",
+      "role": "Engenheira eletricista na VLi<br/><br/>",
+      "presentation": "<p>Engenheira eletricista , Pós Graduada em Engenharia Ferroviária, MBA em Gestão de negócios pela Fundação Dom Cabral.<br/><br/>Valuable Young Leader 2018, Responsável pela implantação do Sistema Toyota de Produção na VLI em Lavras,  Campeã da Convenção regional de melhoria contínua da Vli 2018.</p>",
+      "linkedin": "https://www.linkedin.com/in/rayane-silveira-fraga-b40256100/",
+      "lecture": {
+        "title": "Sistema Toyota de Produção - TPS",
+        "resume": "Vamos falar sobre o sistema Toyota de produção, um sistema que visa a eficiência dos processos, aumentando a produtividade e eliminando os desperdícios sem criar estoques. Vou abordar de uma forma que os participantes conseguirão implantar a metodologia em qualquer seguimento, até mesmo na vida pessoal. Na palestra será abordado também os temas : lean manufacturing, justo in time, kanban e heijunka.",
+        "type": "Carreira/Tecnologia",
+        "duration": "45mins"
+      }
+    },
+    {
+      "id": 16,
+      "name": "Rodrigo Rennó",
+      "img": "assets/img/speakers/rodrigo.jpg",
+      "role": "Owner na Arduo Motorcycle<br/><br/>",
+      "presentation": "<p>Vinte sete anos de experiência em tecnologia com transparência, inovação, melhoria contínua, coordenação de equipes, replicação de conhecimento e resultados.  Uma vida inteira de inspirações criativas descritas em 14 anos escrevendo ficção. Nove anos de coração aberto a animais abandonados se esforçando para somar algo na vida desses seres.</p>",
+      "linkedin": "https://www.linkedin.com/in/rodrigorenno/",
+      "lecture": {
+        "title": "Você é um profissional \"pato\"? Se não é, pense seriamente em fazer \"quack\"",
+        "resume": "Você sabe o que é um profissional \"pato\"? Nesta palestra Rodrigo nos mostra de uma maneira bem descontraída e objetiva o significado desta frase, além disso ele nos coloca com essa frase na mente e trás a tona uma nova forma de raciocínio sobre como nos relacionamos com nossas competências profissionais.",
+        "type": "Carreira/Tecnologia",
+        "duration": "45mins"
+      }
+    },
+    {
+      "id": 17,
+      "name": "Ruan Coelho",
+      "img": "assets/img/speakers/ruan.jpg",
+      "role": "Engenheiro e CEO da Prottop Soluções Inteligentes",
+      "presentation": "<br/><br/><p>Engenheiro Mecatrônico pelo CEFET MG, estudou na University of Southern Indiana nos EUA, onde iniciou suas pesquisas na área de visão computacional e robótica.<br/><br/>É CEO e cofundador da Prottop Soluções Inteligentes, startup de base tecnológica que atua no desenvolvimento de soluções modernas para Industria 4.0.</p>",
+      "linkedin": "https://www.linkedin.com/in/ruancoelho/",
+      "lecture": {
+        "title": "Tecnologia wireless e a Internet das Coisas",
+        "resume": "Nessa conversa iremos mergulhar no mundo da Internet das coisas, entendendo tudo por trás desse conceito, como a tecnologia vem mundando a forma como interagimos em sociedade e o que esperar para o futuro.",
+        "type": "Tecnologia",
+        "duration": "45mins"
+      }
+    },
+    {
+      "id": 18,
+      "name": "Vinícius Soares",
+      "img": "assets/img/speakers/vinicius.jpg",
+      "role": "Mobile Developer na Ignus Digital",
+      "presentation": "<br/><br/><p>Mobile Developer pela Ignus Digital. Defensor do trabalho remoto. Atualmente cuida de um aplicativo iOS para uma startup americana, com foco no bem-estar e saúde de idosos.</p>",
+      "linkedin": "https://www.linkedin.com/in/0vinisoares/",
+      "lecture": {
+        "title": "O futuro é o trabalho remoto",
+        "resume": "Nesta palestra, Vinícius Soares apresenta de forma objetiva uma nova tendência no mercado de trabalho que é o trabalho remoto, cada vez mais difundido especialmente no ramo tecnológico, o trabalho remoto tem se tornado cada vez mais comum e pode ser uma ótima oportunidade para profissionais que desejam trabalhar em grandes empresas (inclusive internacionais).",
+        "type": "Carreira/Tecnologia",
+        "duration": "45mins"
+      }
+    },
+    {
+      "id": 19,
+      "name": "Wharley Ornellas",
+      "img": "assets/img/speakers/wharley.jpg",
+      "role": "FullStack Developer na Energicos System",
+      "presentation": "<br/><br/><p>Desenvolvedor Full-Stack, com mais de 15 anos de experiência de software. Encontra-se em um relacionamento sério com JavaScript <3.</p>",
+      "linkedin": "https://www.linkedin.com/in/wharley-ornelas-da-rocha-65420932/",
+      "lecture": {
+        "title": "Next js, a maneira mais fácil de começar um projeto React",
+        "resume": "Um dos maiores problemas para iniciar com React é a sua configuração inicial. Nessa talk iremos aprender de forma simples e eficaz iniciar um projeto até o deploy.",
+        "type": "Tecnologia",
+        "duration": "45mins"
+      }
+    }
+  ]
 }

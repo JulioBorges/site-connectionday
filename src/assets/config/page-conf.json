@@ -1,8 +1,8 @@
 {
     "enableAbout": true,
     "enableSpeakers": true,
-    "enableProgram": false,
-    "enableDownload": true,
+    "enableProgram": true,
+    "enableDownload": false,
     "enableVenue": true,
     "enableRegister": true,
     "enableFunFacts": true,

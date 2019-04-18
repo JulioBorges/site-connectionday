@@ -1,94 +1,114 @@
 {
-    "title": "Patrocínio / apoio",
-    "subtitle": "Seja um dos nossos patrocinadores/apoiadores e colabore para a realização deste grande evento.",
-    "diamond": [
-        {
-            "img": "assets/img/eng-venda.png",
-            "url": "http://engenhariadavenda.com.br/",
-            "alt": "Engenharia da venda"
-        },
-        {
-            "img": "assets/img/IEvenda.png",
-            "url": "http://engenhariadavenda.com.br/",
-            "alt": "Instituto IE venda"
-        },
-        {
-            "img": "assets/img/sicoobdivicred.png",
-            "url": "http://www.sicoobdivicred.com.br/#p",
-            "alt": "Sicoob crediverde"
-        }
-    ],
-    "gold": [
-        {
-            "img": "assets/img/pitagoras.png",
-            "url": "http://www.faculdadepitagoras.com.br",
-            "alt": "Faculdade Pitágoras"
-        }
-    ],
-    "silver": [
-        {
-            "img": "assets/img/inovamobil.png",
-            "url": "http://www.inovamobil.com.br",
-            "alt": "Inovação computação móvel"
-        },
-        {
-            "img": "assets/img/stackoverflow.png",
-            "url": "https://pt.stackoverflow.com/",
-            "alt": "Stackoverflow português"
-        },
-        {
-            "img": "assets/img/supernerd.png",
-            "url": "https://www.facebook.com/SuperNerdLoja/",
-            "alt": "Supernerd"
-        },
-        {
-            "img": "assets/img/ivoclub.png",
-            "url": "https://www.ivoclub.com.br/",
-            "alt": "Ivo Club"
-        }
-    ],
-    "bronze": [
-        {
-            "img": "assets/img/brustin.png",
-            "url": "https://www.brustin.com.br/",
-            "alt": "Brustin interactive"
-        },
-        {
-            "img": "assets/img/cybercode.png",
-            "url": "",
-            "alt": "Cybercode"
-        },
-        {
-            "img": "assets/img/geec.png",
-            "url": "http://www.ecoworking.net.br/",
-            "alt": "Geec e e.Coworking"
-        },
-        {
-            "img": "assets/img/nex.png",
-            "url": "https://www.nexespecialistas.com/",
-            "alt": "Nex especialistas"
-        }
-    ],
-    "support":[
-        {
-            "img": "assets/img/evoa.png",
-            "url": "",
-            "alt": "Evoa"
-        },
-        {
-            "img": "assets/img/grite.png",
-            "url": "",
-            "alt": "Grite Divinópolis"
-        },
-        {
-            "img": "assets/img/ribeironeto.png",
-            "url": "",
-            "alt": "Ribeiro Neto advogados"
-        },
-        {
-            "img": "assets/img/gdg.png",
-            "url": "https://www.meetup.com/pt-BR/GDG-Divinopolis/",
-            "alt": "GDG Divinópolis"
-        }
-    ]
+  "title": "Patrocínio / apoio",
+  "subtitle": "Seja um dos nossos patrocinadores/apoiadores e colabore para a realização deste grande evento.",
+  "diamond": [
+    {
+      "img": "assets/img/sponsors/eng-venda.png",
+      "url": "http://engenhariadavenda.com.br/",
+      "alt": "Engenharia da venda"
+    },
+    {
+      "img": "assets/img/sponsors/IEvenda.png",
+      "url": "http://engenhariadavenda.com.br/",
+      "alt": "Instituto IE venda"
+    },
+    {
+      "img": "assets/img/sponsors/sicoobdivicred.png",
+      "url": "http://www.sicoobdivicred.com.br/#p",
+      "alt": "Sicoob crediverde"
+    }
+  ],
+  "gold": [
+    {
+      "img": "assets/img/sponsors/pitagoras.png",
+      "url": "http://www.faculdadepitagoras.com.br",
+      "alt": "Faculdade Pitágoras"
+    }
+  ],
+  "silver": [
+    {
+      "img": "assets/img/sponsors/inovamobil.png",
+      "url": "http://www.inovamobil.com.br",
+      "alt": "Inovação computação móvel"
+    },
+    {
+      "img": "assets/img/sponsors/squadra.png",
+      "url": "http://www.squadra.com.br/",
+      "alt": "Squadra Tecnologia"
+    },
+    {
+      "img": "assets/img/sponsors/supernerd.png",
+      "url": "https://www.facebook.com/SuperNerdLoja/",
+      "alt": "Supernerd"
+    },
+    {
+      "img": "assets/img/sponsors/ivoclub.png",
+      "url": "https://www.ivoclub.com.br/",
+      "alt": "Ivo Club"
+    },
+    {
+      "img": "assets/img/sponsors/grupo-sym.png",
+      "url": "https://www.gruposym.com.br/",
+      "alt": "Grupo SYM"
+    },
+    {
+      "img": "assets/img/sponsors/stackoverflow.png",
+      "url": "https://pt.stackoverflow.com/",
+      "alt": "Stackoverflow português"
+    }
+  ],
+  "bronze": [
+    {
+      "img": "assets/img/sponsors/brustin.png",
+      "url": "https://www.brustin.com.br/",
+      "alt": "Brustin interactive"
+    },
+    {
+      "img": "assets/img/sponsors/cybercode.png",
+      "url": "",
+      "alt": "Cybercode"
+    },
+    {
+      "img": "assets/img/sponsors/geec.png",
+      "url": "http://www.ecoworking.net.br/",
+      "alt": "Geec e e.Coworking"
+    },
+    {
+      "img": "assets/img/sponsors/nex.png",
+      "url": "https://www.nexespecialistas.com/",
+      "alt": "Nex especialistas"
+    }
+  ],
+  "support": [
+    {
+      "img": "assets/img/sponsors/sebrae.png",
+      "url": "http://www.sebrae.com.br/sites/PortalSebrae",
+      "alt": "Sebrae"
+    },
+    {
+      "img": "assets/img/sponsors/evoa.png",
+      "url": "",
+      "alt": "Evoa"
+    },
+    {
+      "img": "assets/img/sponsors/grite.png",
+      "url": "",
+      "alt": "Grite Divinópolis"
+    },
+    {
+      "img": "assets/img/sponsors/ribeironeto.png",
+      "url": "",
+      "alt": "Ribeiro Neto advogados"
+    },
+    {
+      "img": "assets/img/sponsors/gdg.png",
+      "url": "https://www.meetup.com/pt-BR/GDG-Divinopolis/",
+      "alt": "GDG Divinópolis"
+    },
+    {
+      "img": "assets/img/sponsors/canto.png",
+      "url": "",
+      "alt": "Canto marcas e patentes"
+    }
+  ]
 }

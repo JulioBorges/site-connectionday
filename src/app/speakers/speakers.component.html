@@ -6,52 +6,31 @@
         <h2 class="uppercase">{{this.vm.title}}</h2>
         <p class="lead">{{this.vm.subtitle}}</p>
       </div>
-
       <ul id="list-speaker" class="list-unstyled">
         <li class="col-lg-3 col-md-3 col-sm-4" *ngFor="let speaker of this.vm.speakers; let i = index">
-          <div id="popup" class="white-popup mfp-hide container">
-            <div class="row">
-              <div id="speaker-detail" class="col-lg-10 col-lg-offset-1">
-                <div class="row">
-                  <button title="Close (Esc)" type="button" class="mfp-close">×</button>
-
-                  <div class="col-md-5 col-lg-5 no-padding">
-                    <img class="img-responsive" src="{{speaker.img}}" alt="" />
-                  </div>
-
-                  <div class="col-md-7 col-lg-7">
-                    <h2>{{speaker.name}}</h2>
-                    <p class="lead">{{speaker.role}} <strong>{{speaker.company}}</strong></p>
-                    <div id="content" [innerHTML]="speaker.presentation">
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-
           <div class="speaker">
             <figure class="effect-ming">
               <img class="img-responsive" src="{{speaker.img}}" alt="" />
               <figcaption>
-                <span><a class="html-popup" href="#popup" (click)="clickPopup(speaker)"><img class="img-responsive"
+                <span><a class="html-popup" href="{{'#popup' + i}}" data-speaker=speaker><img class="img-responsive"
                       src="assets/img/plus.png" alt="{{speaker.name}}"></a></span>
               </figcaption>
             </figure>
             <div class="caption text-center">
               <h4>{{speaker.name}}</h4>
-              <p class="company">{{speaker.company}}</p>
+              <p class="company" [innerHTML]="speaker.role"></p>
             </div>
           </div>
+          <app-speaker-detail id="{{'popup' + i}}" class="white-popup mfp-hide" [speaker]=speaker>
+          </app-speaker-detail>
         </li>
       </ul>
 
+      <!--
       <div class="col-lg-12 col-md-12 col-sm-12 text-center">
         <a id="loadmore" class="button button-small button-line-dark">Carregar mais</a>
       </div>
-
+      -->
     </div>
   </div>
 </section>
