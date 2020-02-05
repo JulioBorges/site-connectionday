@@ -1,25 +1,25 @@
 {
-    "title": "Em 2018 foi assim:",
-    "facts": [
-        {
-            "class": "pe pe-4x pe-7s-alarm",
-            "number": 14,
-            "description": "Horas de conteúdo"
-        },
-        {
-            "class": "pe pe-4x pe-7s-micro",
-            "number": 20,
-            "description": "Palestras"
-        },
-        {
-            "class": "pe pe-4x pe-7s-display2",
-            "number": 3,
-            "description": "Salas simultâneas"
-        },
-        {
-            "class": "pe pe-va pe-4x pe-7s-users",
-            "number": 200,
-            "description": "Cadeiras disponíveis"
-        }
-    ]
+  "title": "Em 2018 foi assim:",
+  "facts": [
+    {
+      "class": "pe pe-4x pe-7s-alarm",
+      "number": 14,
+      "description": "Horas de conteúdo"
+    },
+    {
+      "class": "pe pe-4x pe-7s-micro",
+      "number": 14,
+      "description": "Palestras"
+    },
+    {
+      "class": "pe pe-4x pe-7s-display2",
+      "number": 2,
+      "description": "Salas simultâneas"
+    },
+    {
+      "class": "pe pe-va pe-4x pe-7s-users",
+      "number": 400,
+      "description": "Cadeiras disponíveis"
+    }
+  ]
 }
