@@ -1,40 +1,46 @@
 <section id="register" data-component="register">
   <div class="container">
     <div class="row">
-
       <div class="col-lg-12">
         <h2 class="uppercase text-center">Ingressos</h2>
-        <p class="lead text-center">Adquira os ingressos por meio da plataforma sympla.</p>
+        <p class="lead text-center">
+          Adquira os ingressos por meio da plataforma sympla.
+        </p>
       </div>
 
-      <div class="col-lg-12">
-        <!-- PRICE TABLES -->
+      <!-- <div class="col-lg-12">
         <div id="price-carousel">
-
-          <div class="price-table" *ngFor="let ticket of this.vm.tickets; let i = index">
+          <div
+            class="price-table"
+            *ngFor="let ticket of this.vm.tickets; let i = index"
+          >
             <div class="icon">
               <i class="pe-5x pe-va pe-7s-ribbon"></i>
             </div>
 
             <div class="table-header">
-              <h3>{{ticket.description}}</h3>
-              <p class="price">{{ticket.price}}</p>
+              <h3>{{ ticket.description }}</h3>
+              <p class="price">{{ ticket.price }}</p>
             </div>
 
             <ul class="desc list-unstyled">
-              <li> {{ticket.line1}} </li>
-              <li> {{ticket.line2}} </li>
-              <li> {{ticket.line3}} </li>
-              <li> {{ticket.line4}} </li>
+              <li>{{ ticket.line1 }}</li>
+              <li>{{ ticket.line2 }}</li>
+              <li>{{ ticket.line3 }}</li>
+              <li>{{ ticket.line4 }}</li>
             </ul>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="col-lg-12 text-center">
-        <a class="button button-small button-line-dark" href="{{this.vm.urlEvent}}">Compre aqui seu ingresso</a>
+        <a
+          class="button button-small button-line-dark"
+          target="_blank"
+          href="{{ this.vm.urlEvent }}"
+          >Compre aqui seu ingresso</a
+        >
       </div>
-
     </div>
   </div>
 </section>
